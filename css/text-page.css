@@ -1,0 +1,302 @@
+.top-desc-heading{
+
+
+}
+.top-desc-txt{
+    padding: 0 0 68px 20px;
+}
+.top-desc-txt-blc{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.09em;
+    color: #737373;
+    padding-bottom: 30px;
+}
+.top-desc-txt-blc:last-child{
+    padding-bottom: 0;
+}
+.gar-section-top{
+  
+}
+
+
+.gar-section-form-wrapp{
+    padding-bottom: 63px;
+}
+.title-stl{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding: 30px 0 27px 20px;
+}
+.section-form-title{
+    text-align: center;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding: 47px 0 25px 0;
+}
+.section-top-img{
+    line-height: 0  ;
+}
+.section-form-title-under{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #737373;
+}
+.gar-section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 33px;
+}
+.form-input-wrapp>input{
+    display: block;
+    width:660px;
+    height: 68px;
+    margin-bottom: 26px;
+}
+.form-input-wrapp>input::placeholder{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    color: #737373;
+    padding-left: 18px;
+}
+.checkbox-wrapp{
+    display: flex;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.checkbox-gar{
+    display: block;
+    position: absolute;
+    left:0;
+    top: 2px;
+   
+}
+
+
+.checkbox-underline{
+    text-decoration: underline;
+}
+
+.gar-section-form-btn{
+    width: 201px;
+    height: 57px;
+    background: #353430;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6743px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.gar-section-form-btn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor:pointer;
+    border: none;
+}
+.gar-section-cond{
+    padding: 31px 0 27px 20px;
+}
+.gar-section-cond-title
+{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding: 30px 0 25px 0;
+}
+.gar-section-cond-wrapp{
+    padding-left: 20px;
+}
+.gar-section-cond-txt{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 154.7%;
+    letter-spacing: 0.09em;
+    color: #737373;
+    padding-bottom: 30px;
+    list-style: decimal;
+}
+.num-list-pos{
+    margin-left: 22px;
+}
+
+
+.gar-section-return{
+    padding: 24px 0 39px 20px;
+}
+.gar-section-return-title{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+.gar-section-return-wrapp{
+    padding-left: 20px;
+}
+
+.return-list-item::before {
+    content: "\2022";  
+    color: #000000; 
+    height: 1px;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1.5em; 
+    position: absolute;   
+    font-size: 10px;
+  }
+.return-list-item{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 154.7%;
+    letter-spacing: 0.09em;
+    color: #737373;
+    margin-left: 27px;  
+    padding-bottom: 30px;
+}
+.return-list-item:last-child{
+    padding-bottom: 0;
+} 
+
+
+
+
+
+/* PAGEE ORDERRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+
+.section-top-order{
+    padding-bottom: 53px;
+}
+
+.choise-way{
+    font-family: 'Circe Rounded ';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 154.7%;
+    letter-spacing: 0.09em;
+    color: #737373;
+    padding:0 0 25px 20px;
+}
+.country-select-wrapp{
+    padding-left: 20px;
+    display: flex;
+}
+.select-country{
+    width: 470px;
+    height: 65px;
+    margin-right: 14px;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+.find-country{
+    width: 206px;
+    height: 64px;
+    background: #353430;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.5051px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    border:none;
+}
+
+.orders-ways-wrapper{
+    display: flex;
+}
+.ordder-way-blc{
+    margin-left: 20px;
+    padding: 20px 10px 23px 25px;
+    width: 420px;
+    /* height: 281px; */
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
+    box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
+}
+.way-blc-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-ways-order{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    color: #000000;
+}
+.way-blc-mid{
+    padding: 14px 0 13px 0;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    color: #A0A0A0;
+}
+.time-delivery{
+    display: flex;
+    padding-bottom: 13px;
+}
+.way-blc-bot{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6087px;
+    line-height: 20px;
+}
