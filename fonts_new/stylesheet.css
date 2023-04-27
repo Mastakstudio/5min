@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('CirceRounded-Regular5.eot');
+    src: local('Circe Rounded  Regular 5'), local('CirceRounded-Regular5'),
+        url('CirceRounded-Regular5.eot?#iefix') format('embedded-opentype'),
+        url('CirceRounded-Regular5.woff2') format('woff2'),
+        url('CirceRounded-Regular5.woff') format('woff'),
+        url('CirceRounded-Regular5.ttf') format('truetype');
+    font-weight: 300;
+    /*font-style: normal;*/
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('CirceRounded-Regular5.eot');
+    src: local('Circe Rounded  Regular 5'), local('CirceRounded-Regular5'),
+        url('CirceRounded-Regular5.eot?#iefix') format('embedded-opentype'),
+        url('CirceRounded-Regular5.woff2') format('woff2'),
+        url('CirceRounded-Regular5.woff') format('woff'),
+        url('CirceRounded-Regular5.ttf') format('truetype');
+    font-weight: 400;
+    /*font-style: normal;*/
+}
+
+/*@font-face {*/
+/*    font-family: 'Circe';*/
+/*    src: url('CirceRounded-Regular3.otf');*/
+/*    src: */
+        /*url('Circe-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*        url('CirceRounded-Regular3.woff2') format('woff2'),*/
+/*        url('CirceRounded-Regular3.woff') format('woff'),*/
+/*        url('CirceRounded-Regular3.ttf') format('truetype');*/
+/*    font-weight: 600;*/
+    /*font-style: normal;*/
+/*}*/
+@font-face {
+    font-family: 'Circe';
+    src: url('CirceRounded-AltBold.eot');
+    src: local('Circe Rounded Alt Bold'), local('CirceRounded-AltBold'),
+        url('CirceRounded-AltBold.eot?#iefix') format('embedded-opentype'),
+        url('CirceRounded-AltBold.woff2') format('woff2'),
+        url('CirceRounded-AltBold.woff') format('woff'),
+        url('CirceRounded-AltBold.ttf') format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('CirceRounded-Regular.eot');
+    src: 
+        /*url('CirceRounded-Regular.woff2') format('woff2'),*/
+        /*url('CirceRounded-Regular.woff') format('woff'),*/
+        url('CirceRounded-Regular.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+
