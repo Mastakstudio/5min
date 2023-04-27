@@ -3512,10 +3512,10 @@ cursor: pointer;
 color: #92A35F;
 }
 
-/* .opacity{
+.opacity{
     opacity: 0;
-    transition: 0.5s; временно скрыл
-} */
+    transition: 0.5s; 
+}
 .opacity.o-active{
     opacity: 1;
     transition: 0.5s;

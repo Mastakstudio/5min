@@ -73,7 +73,7 @@
     height: 68px;
     margin-bottom: 26px;
 }
-.form-input-wrapp>input::placeholder{
+.form-input-wrapp>input::placeholder, .form-input-wrapp>textarea::placeholder{
     font-family: 'Circe';
     font-style: normal;
     font-weight: 400;
@@ -82,6 +82,10 @@
     text-align: left;
     color: #737373;
     padding-left: 18px;
+}
+.form-input-wrapp>textarea{
+    width: 100%;
+    padding-top: 20px;
 }
 .checkbox-wrapp{
     display: flex;
@@ -213,7 +217,7 @@
 
 .section-ways-how-order{
     
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
 .section-top-order{
@@ -262,12 +266,13 @@
 
 .orders-ways-wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
 .ordder-way-blc{
     margin-left: 20px;
     padding: 20px 10px 23px 25px;
     width: 420px;
-    /* height: 281px; */
+    margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
     -moz-box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
     box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.53);
@@ -290,7 +295,7 @@
     font-family: 'Circe';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.2609px;
+    font-size: 14.2609px;
     line-height: 23px;
     color: #A0A0A0;
 }
@@ -298,13 +303,513 @@
     display: flex;
     padding-bottom: 13px;
 }
+.txt-stl-time-del-f{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    margin-right: 3px;
+    color: #000000;
+}
 .way-blc-bot{
     font-family: 'Circe';
     font-style: normal;
     font-weight: 400;
     font-size: 14.6087px;
-    line-height: 20px;
+    line-height: 18px;
 }
 .ways-to-wrapper{
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.courier{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    color: #92A35F;
+}
+.place-deliver, .time-exprees{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    color: #F09661;
+}
+.time{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.2609px;
+    line-height: 23px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGEEEE */
+
+
+
+
+.section-top-img-about{
+    position: relative;
+}
+.hover-img-about{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.section-top-menu-blc{
+    max-width: 522px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #F8F4EF;;
+}   
+.top-menu-blc-title{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30.9402px;
+    line-height: 154.7%;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding: 36px 66px 0 66px;
+}
+.top-menu-blc-desc{
+    font-family: 'Circe';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 19.7561px;
+    line-height: 154.7%;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding: 24px 26px 0 26px;
+}
+.wrapp-btn-about-cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 26px 0;
+}
+.in-catalog{
+    background: #353430;
+    border: none;
+    padding: 19px 65px;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6743px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.about-circle-row{
+    background-image: url(../img/Ellipse\ 44.png);
+    height: 10px;
+    background-repeat: repeat-x;
+    margin: 0 35px 0 35px;
+}
+.about-container{
+    
+    justify-content: space-between;
+}
+.section-abot-person{
+    padding: 44px 0;
+    display:flex;
+   
+}
+.person-desc{
+    padding-left: 40px;
+}
+.person-desc-second-child{
+    padding: 0 40px 0 0;
+}
+.about-person-name{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.4293px;
+    line-height: 140.7%;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding-bottom: 12px;
+}
+.level-in-com-about{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.7434px;
+    line-height: 140.7%;
+    letter-spacing: 0.09em;
+    color: #ADADAD;
+    padding-bottom: 10px;
+}
+.small-desc-person-about{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.7561px;
+    line-height: 154.7%;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding-bottom: 18px;
+}
+.lov-txt-person-about, .lov-txt-person-about>span{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.4293px;
+    line-height: 140.7%;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.lovely-slider-about{
+    display: flex;
+    justify-content: space-between;
+}
+.lov-slider-item{
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+.lov-slider-img{
+
+}
+.love-slider-item-cat{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.4161px;
+    line-height: 13px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.lov-slider-item-name{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.9426px;
+    line-height: 22px;
+    letter-spacing: 0.09em;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.love-item-slider-price{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1383px;
+    line-height: 21px;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+
+
+
+
+/* PARTNERS */
+
+.section-back-connection{
+    padding-bottom: 37px;
+}
+
+
+/* order-delivery */
+
+.section-del-pay{
+    padding-bottom: 30px;
+}
+.section-del-pay{
+    display: flex;
+    
+}
+.deliver-blc, .pay-blc{
+    width: 50%;
+    padding-right: 50px;
+}
+.del-pay-img-row{
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+.del-pay-img-row>img{
+    padding-right: 25px;
+}
+.del-pay-txt{
+    padding-left: 20px;
+    font-family: 'Circe';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 154.7%;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIIIIIIAA */
+/* @media(max-width:){
+ 
+} */
+
+@media(max-width:1380px){
+   .container{
+    padding: 0;
+   }
+   .section-top-img>img{
+    width: 100%;
+   }
+   .title-stl{
+    padding-left: 10px;
+   }
+   .top-desc-txt{
+    padding:0 20px 68px 20px;
+   }
+   .section-form-title{
+
+   }
+    .gar-section-return, .gar-section-cond{
+    padding-right: 20px;
+   }
+   .gar-section-return{
+    padding-right: 20px;
+   }
+   .gar-section-cond-wrapp{
+    padding-left:45px;
+   }
+}
+@media(max-width:1000px){
+    .section-del-pay{
+        display: block;
+    }
+    .deliver-blc, .pay-blc{
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+    }
+}
+@media(max-width:880px){
+    .ways-to-wrapper, .orders-ways-wrapper{
+       justify-content: center;
+    }
+}
+@media(max-width:720px){
+    .section-form-title{
+        padding: 0 20px 25px 20px;
+    }
+    .top-desc-txt{
+        padding-bottom: 28px;
+    }
+    .gar-section-return{
+        padding-right: 20px;
+        padding-top: 0;
+       }
+       .gar-section-cond{
+        padding-bottom: 0;
+       }
+    .gar-section-form-wrapp{
+        padding-bottom: 0;
+    }
+    .gar-section-cond{
+        padding-top: 0;
+    }
+    .top-desc-txt{
+        padding-bottom: 15px;
+    }
+    .form-garanties{
+        width: auto;
+        margin: 0 20px;
+    }
+    .form-input-wrapp>input{
+        width: 100%;
+    }
+    .section-form-title-under{
+        margin: 0 30px;
+    }
+    /* .section-top-img{
+        min-height: 240px;
+    }
+    .section-top-img>img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    } */
+
+    .country-select-wrapp{
+        display: block;
+    }
+    .select-country{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .find-country{
+        width: 100%;
+        
+    }
+    .country-select-wrapp{
+        padding: 0;
+        margin: 0 20px;
+    }
+    .form-partners{
+        padding: 20px;
+    }
+ }
+
+ @media(max-width:500px){
+    .ordder-way-blc{
+        width: 100%;
+        margin-right: 20px;
+    }
+ }
+
+ @media(max-width:400px){
+    .title-stl{
+        padding: 30px 0 17px 16px ;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .top-desc-txt-blc{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .top-desc-txt{
+        padding:  0 17px 25px 17px;
+    }
+    .section-form-title{
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.09em;
+    }
+    .section-form-title-under{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .checkbox-wrapp{
+        font-size: 14px;
+        line-height: 18px; 
+        padding-top: 30px;
+        padding-bottom: 40px; 
+    }
+    .gar-section-form-btn{
+        margin-bottom: 72px;
+    }
+    .gar-section-cond{
+        padding: 0;
+    }
+    .gar-section-cond-wrapp{
+        padding-right: 16px;
+    }
+    .gar-section-cond-txt{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .return-list-item{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .gar-section-return{
+        padding: 0;
+    }
+    .gar-section-return-wrapp{
+        padding-left: 0;
+        padding-right: 17px;
+        padding-bottom: 77px;
+    }
+    .gar-section-cond-wrapp{
+        padding-bottom: 27px;
+    }
+    .return-list-wrapp{
+        padding-left: 15px;
+    }
+    .num-list-pos{
+        list-style-position: inside;
+        margin-left: 0;
+    }
+    .checkbox-gar{
+        top: 30%;
+        
+    }
+    .form-input-wrapp>input::placeholder, .form-input-wrapp>textarea::placeholder{
+        font-size: 16.4599px;
+        line-height: 21px;
+    }
+    .ordered-title-stl{
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 36px;
+    }
+    .choise-way{
+        font-size: 15px;
+        line-height: 19px;
+        padding-right: 10px;
+        padding-left: 16px;
+        padding-top: 16px;
+        padding-bottom: 30px;
+    }
+    .section-top-order{
+        padding-bottom: 33px;
+    }
+    .deliver-blc, .pay-blc{
+        padding: 0 16   px 0 0;
+    }
+    .gar-section-cond{
+        padding: 0 16px 0 0;
+    }
+    .gar-section-cond-wrapp{
+        padding-left: 16px;
+    }
+    .gar-section-form{
+        padding-bottom: 0;
+    }
+    .top-menu-blc-desc{
+        font-size: 13.0193px;
+        line-height: 154.7%;
+        letter-spacing: 0.09em;
+        padding: 15px 17px 25px 17px;
+    }
+    .in-catalog{
+        font-size: 13.0193px;
+        line-height: 154.7%;    
+        text-align: center;
+        letter-spacing: 0.09em;
+    }
+    .wrapp-btn-about-cat{
+        padding-top: 0;
+    }
+  
 }
