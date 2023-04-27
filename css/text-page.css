@@ -211,6 +211,11 @@
 
 /* PAGEE ORDERRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
 
+.section-ways-how-order{
+    
+    padding-bottom: 25px;
+}
+
 .section-top-order{
     padding-bottom: 53px;
 }
@@ -299,4 +304,7 @@
     font-weight: 400;
     font-size: 14.6087px;
     line-height: 20px;
+}
+.ways-to-wrapper{
+    display: flex;
 }
