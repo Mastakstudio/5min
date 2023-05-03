@@ -1612,6 +1612,7 @@ border-radius: 100%;
     text-align: center;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .stock-block-product-img-label.new{
     background: #92A35F;
@@ -1648,7 +1649,7 @@ border-radius: 100%;
     color: #000000;
 }
 .stock-block-product-desc-title{
-    font-weight: 300;
+    font-weight: 800;
     font-size: 22px;
     line-height: 117.2%;
     /* or 26px */

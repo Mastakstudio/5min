@@ -474,4 +474,16 @@ window.addEventListener("DOMContentLoaded", function() {
         $(this).find('.product-mob-tab-title').toggleClass('active');
         $(this).find('.product-mob-tab-content').slideToggle();
     });
+
+    // 
+
+    $('.product-tabs-button').click(function(){
+        var slideId = $(this).data('cont');
+
+        $('.product-tabs-tab').removeClass('active');
+        $('.product-tabs-button').removeClass('active');
+
+        $(this).addClass('active');
+        $('.product-tabs-tab-'+slideId).addClass('active');
+    });
 });

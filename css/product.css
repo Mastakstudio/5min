@@ -5,8 +5,13 @@
     display: flex;
     justify-content: space-between;
     padding-top:18px;
+    position: relative;
 }
-
+.product-brand{
+    position: absolute;
+    top:-20px;
+    right:0;
+}
 .product-top-left{
     width: 53.5%;
     display: flex;
@@ -183,6 +188,9 @@
     letter-spacing: 0.09em;
     padding-left:7px;
     padding-right:7px;
+    color: #818181;
+}
+.slick-current .product-top-right-variation-slide-desc{
     color: #000000;
 }
 
@@ -696,6 +704,9 @@ padding-left: 47px;
     }
     .stock-block-title{
         margin-right:0;
+    }
+    .product-brand{
+        display: none;
     }
 }
 
