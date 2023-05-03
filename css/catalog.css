@@ -13,6 +13,10 @@
     margin-right:34px;
 }
 
+.catalog .stock-block-product-price-sale{
+    color: #353430;
+}
+
 .catalog-filter-top{
     display: flex;
     justify-content: space-between;
