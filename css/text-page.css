@@ -29,7 +29,7 @@ textarea{
     font-size: 20px;
     line-height: 31px;
     letter-spacing: 0.09em;
-    color: #737373;
+    color: #000;
     padding-bottom: 30px;
 }
 .top-desc-txt-blc:last-child{
@@ -47,7 +47,7 @@ textarea{
 .title-stl{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 30px;
     line-height: 38px;
     letter-spacing: 0.09em;
@@ -57,7 +57,7 @@ textarea{
     text-align: center;
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 40px;
     line-height: 51px;
     text-align: center;
@@ -70,7 +70,7 @@ textarea{
     text-align: center;
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 40px;
     line-height: 51px;
     text-align: center;
@@ -221,7 +221,7 @@ textarea{
     font-size: 20px;
     line-height: 154.7%;
     letter-spacing: 0.09em;
-    color: #737373;
+    color: #000;
     padding-bottom: 30px;
     list-style: decimal;
 }
@@ -232,6 +232,8 @@ textarea{
 .gar-return-wrapp{
    padding-top: 24px;
    padding-bottom: 39px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 .gar-section-return{
     background: rgba(216, 216, 216, 0.18);
@@ -267,8 +269,8 @@ textarea{
     font-size: 20px;
     line-height: 154.7%;
     letter-spacing: 0.09em;
-    color: #737373;
-    margin-left: 27px;  
+    color: #000;
+    margin-left: 15px;  
     padding-bottom: 30px;
 }
 .return-list-item:last-child{
@@ -353,8 +355,9 @@ textarea{
     left: 0;
     cursor: pointer;
     width: 100%;
-    z-index: 5;
+    z-index: 15;
     background: #fff;
+    /* max-width: ; */
     user-select: none;
     font-family: 'Circe';
     font-style: normal;
@@ -450,7 +453,7 @@ textarea{
 .way-blc-bot-exp{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 14.6087px;
     line-height: 18px;
 }
@@ -481,7 +484,7 @@ textarea{
     color: #000000;
 }
 .way-blc-mid{
-    margin: 23px 0 32px 0;
+    margin: 20px 0 27px 0;
     font-family: 'Circe';
     font-style: normal;
     font-weight: 400;
@@ -490,6 +493,7 @@ textarea{
     color: #A0A0A0;
 }
 .time-delivery{
+
     display: flex;
     padding-bottom: 13px;
 }
@@ -501,11 +505,12 @@ textarea{
     line-height: 23px;
     margin-right: 3px;
     color: #000000;
+    font-weight: 800;
 }
 .way-blc-bot{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 14.6087px;
     line-height: 18px;
 }
@@ -534,7 +539,7 @@ textarea{
 .time{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 18.2609px;
     line-height: 23px;
     color: #000000;
@@ -676,6 +681,10 @@ textarea{
 .about-blc-ad{
     padding-bottom: 10px;
 }
+.cont-for-person-about{
+    border-top: 1px solid #D9D9D9;
+    
+}
 .section-abot-person{
     padding: 44px 0;
     display:flex;
@@ -694,7 +703,7 @@ textarea{
 .about-person-name{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 28.4293px;
     line-height: 140.7%;
     letter-spacing: 0.09em;
@@ -725,7 +734,7 @@ textarea{
 .lov-txt-person-about, .lov-txt-person-about>span{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 28.4293px;
     line-height: 140.7%;
     letter-spacing: 0.09em;
@@ -784,7 +793,10 @@ textarea{
 }
 
 
-
+.country-select-wrapp-or{
+    display: flex;
+    margin-right: 25px;
+}
 
 
 /* PARTNERS */
@@ -836,7 +848,7 @@ textarea{
 .dots-style {
     position: absolute;
     top: -20px;
-    right: 40px;
+    right: 42px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -904,7 +916,7 @@ textarea{
     padding-top: 14px;
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 24.1673px;
     line-height: 31px;
     letter-spacing: 0.09em;
@@ -914,7 +926,7 @@ textarea{
     padding-top: 14px;
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 23.02px;
     line-height: 29px;
     letter-spacing: 0.09em;
@@ -945,7 +957,11 @@ textarea{
     padding-left: 17px;
   }
   .choise-type-number-blc{
-   
+    background: rgba(53, 52, 48, 0.62);
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     
     display: flex;
     align-items: center;
@@ -953,9 +969,7 @@ textarea{
   
   }
   .choise-type-number-blc>p{
-    background: rgba(53, 52, 48, 0.62);
-    padding: 5px 10px;
-    border-radius: 50%;
+ 
     font-family: 'Circe';
     font-style: normal;
     font-weight: 400;
@@ -967,7 +981,7 @@ textarea{
   }
   .choise-type-nymber-txt{
     font-family: 'Circe';
-    font-weight: 400;
+    font-weight: 800;
     font-size: 21.3717px;
     letter-spacing: 0.09em;
     color: #000000;
@@ -1271,7 +1285,7 @@ letter-spacing: 0.09em;
 color: #000000;
 }
 .how-to-add-txt-bold{
-    font-weight: 400;
+    font-weight: 800;
 }
 .hot-to-add-pos-circle{
     position: absolute;
@@ -1348,12 +1362,12 @@ line-height: 13.92px;
    .section-top-img>img{
     width: 100%;
    }
-   .title-stl{
+   /* .title-stl{
     padding-left: 10px;
-   }
-   .top-desc-txt{
+   } */
+   /* .top-desc-txt{
     padding:0 20px 68px 20px;
-   }
+   } */
    .section-form-title{
 
    }
@@ -1363,15 +1377,18 @@ line-height: 13.92px;
    .gar-section-return{
     padding-right: 20px;
    }
-   .gar-section-cond-wrapp{
+   /* .gar-section-cond-wrapp{
     padding-left:45px;
-   }
+   } */
    .about-container{
     padding: 0 20px;
    }
    .how-to-add-wrapp{
     padding-right: 40px;
    }
+   .section-abot-person{
+    margin-top: 20px;
+}
 }
 @media(max-width:1300px){
     .about-container{
@@ -1389,6 +1406,7 @@ line-height: 13.92px;
     .dots-style{
         right: 20px;
     }
+
 }
 @media(max-width:1100px){
 
@@ -1430,11 +1448,29 @@ line-height: 13.92px;
     .how-to-add-blc{
     margin: 20px 0;
     }
-
+    .deliver-blc-wrapp, .pay-blc-wrapp{
+        margin: 0 auto;
+    }
+    .ordder-way-blc{
+        margin-right: 0;
+    }
+    .pay-blc{
+        margin-top: 40px;
+    }
+    .section-bonus-give-wrapp-item{
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
 }
 @media(max-width:880px){
     .ways-to-wrapper, .orders-ways-wrapper{
        justify-content: center;
+    }
+    .present-blc{
+        width: auto;
+    }
+    .ordered-title-stl{
+        text-align: center;
     }
 }
 @media(max-width:780px){
@@ -1544,7 +1580,10 @@ line-height: 13.92px;
     .how-to-add-wrapp{
         justify-content: center;
     }
-
+    .btw-bonus-txt{
+        padding-left:16px;
+        padding-right: 16px;
+    }
  }
  @media(max-width:800px){
         .person-img-about{
@@ -1555,6 +1594,17 @@ line-height: 13.92px;
         min-height: 340px;
         min-width: 250px;
         object-fit: cover;
+    }
+    .country-select-wrapp-or{
+        display: block;
+        margin-right: 0;
+    }
+    .select, .new-select {
+        width: 100%;
+    }
+    .find-country{
+        width: 100%;
+        margin-top: 20px;
     }
  }
 
@@ -1595,6 +1645,16 @@ line-height: 13.92px;
         z-index: 3;
         background-color: #F8F4EF;;
     }  */
+    .section-bonus-give-wrapp{
+        margin: 50px 20px 60px 30px;
+    }
+    .stl-title-for-bonus{
+        margin: 32px 0 22px 30px;
+    }
+    .txt-under-title{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
  }
 
 @media(max-width:550px){
@@ -1661,6 +1721,7 @@ line-height: 13.92px;
     .ordder-way-blc{
         width: 100%;
         margin-right: 20px;
+        padding: 22px 13px  21px;
     }
     .person-img-about{
         min-height: 280px;  
@@ -1677,6 +1738,14 @@ line-height: 13.92px;
     }
     .cash-level-blc-txt{
         margin-left: 15px;
+    }
+    .ordder-way-blc{
+        margin-right: 0;
+    }
+
+
+    .ordered-title-stl{
+        text-align: left;
     }
 }
 @media(max-width:450px){
@@ -1748,7 +1817,7 @@ line-height: 13.92px;
     }
     .top-desc-txt{
        padding: 0;
-       margin-top: 17px;
+       margin-top: 16px;
        
     }
     .gar-section-form-wrapp{
@@ -1790,6 +1859,7 @@ line-height: 13.92px;
     .return-list-item{
         font-size: 15px;
         line-height: 19px;
+        margin-left: 27px;
     }
     .gar-section-return{
         padding: 0;
@@ -1827,7 +1897,7 @@ line-height: 13.92px;
     font-size: 20px;
    }
     .ordered-title-stl{
-        font-size: 20px;
+        font-size: 19px;
         line-height: 26px;
 
     }
@@ -1932,6 +2002,14 @@ line-height: 13.92px;
         margin: 8px 0 8px;
         padding: 0 10px;
     
+    }
+    .present-blc:nth-child(2n+1){
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+    .present-blc:nth-child(2n){
+        padding-left: 5px;
+        padding-right: 10px;
     }
     .present-blc-atric, .present-blc-nominal, .present-blc-price, .present-blc-btn{
         display: none;
@@ -2091,6 +2169,14 @@ line-height: 13.92px;
  }
  .ordder-way-blc, .ordder-way-blc-exp{
     margin-right: 0;
+
+ }
+ .ordder-way-blc-exp{
+    padding: 8px 13px 22px 19px;
+ }
+ .way-blc-mid-exp{
+    margin: 12px 0 12px 0;
+    font-size: 12.52px;
  }
  .section-del-pay{
     padding: 0;
@@ -2124,13 +2210,14 @@ line-height: 154.7%;
  }
  .choise-type-present{
     padding: 0 24px;
-    margin: 8px 0;
+    margin-bottom: 8px;
+    margin-top: 0;
  }
  .choise-type-nymber-txt{
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
  }
  .top-present-stl{
-    margin: 16px 23px 16px 23px;
+    margin: 16px 23px 26px 23px;
     padding: 0;
  }
  .choise-type-wrapp{
@@ -2246,6 +2333,32 @@ line-height: 154.7%;
  .home-bottom-form-checkbox-for-m{
     top:-10px;
  }
+ .way-blc-mid {
+    font-size: 12.52px;
+    margin: 18px 0 10px 0;
+ }
+ .txt-stl-time-del-f{
+    font-size: 15.65px;
+ }
+ .way-blc-bot{
+    font-size: 12.52px;
+ }
+ .way-blc-bot-exp{
+    font-size: 12.52px;
+ }
+ .name-ways-order{
+    font-size: 15.65px;
+ }
+ .time-delivery{
+        padding-bottom: 11px;
+ }
+ .pay-blc{
+    margin-top: 0;
+}
+.btw-bonus-txt{
+    padding-left:0 ;
+    padding-right: 0;
+}
 }
 
 
