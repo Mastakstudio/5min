@@ -5,6 +5,8 @@
 textarea{
     resize: none;
 }
+
+
 .centering{
     display: flex;
     align-items: center;
@@ -107,7 +109,6 @@ textarea{
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    margin-bottom: 33px;
 }
 .section-top-img{
     line-height: 0  ;
@@ -163,9 +164,15 @@ textarea{
 }
 
 .check-for-par{
-    margin-top: 40px;
+    margin-top: 29px;
 }
 
+.par-bot-form-check{
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
 .home-bottom-form-checkbox-for-m{
   
     margin-right: 9px;
@@ -318,7 +325,10 @@ textarea{
     display: none;
     margin-top: 25px;
 }
-
+.country-select-wrapp-or{
+    display: flex;
+    margin-top: 25px;
+}
 .select {
     width: 470px;
     height: 65px;
@@ -607,7 +617,7 @@ textarea{
 .top-menu-blc-title{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 30.9402px;
     line-height: 154.7%;
     text-align: center;
@@ -775,7 +785,7 @@ textarea{
 .lov-slider-item-name{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16.9426px;
     line-height: 22px;
     letter-spacing: 0.09em;
@@ -1016,7 +1026,7 @@ textarea{
 .top-menu-blc-title-bonus{
     font-family: 'Circe';
     font-style: normal;
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size: 35px;
     line-height: 154.7%;
     text-align: center;
@@ -1106,7 +1116,7 @@ textarea{
 .bonus-circle>p{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 19.0951px;
     text-align: center;
     letter-spacing: 0.09em;
@@ -1147,7 +1157,7 @@ textarea{
 .stl-title-for-bonus{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 35px;
     line-height: 144.7%;
     letter-spacing: 0.09em;
@@ -1235,7 +1245,7 @@ textarea{
 .btw-bonus-2-txt{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36.2326px;
     line-height: 154.7%;
     letter-spacing: 0.09em;
@@ -1247,7 +1257,7 @@ textarea{
 .btw-bonus-2-txt-stl2{
     font-family: 'Circe';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36.2326px;
     line-height: 154.7%;
     letter-spacing: 0.09em;
@@ -1285,7 +1295,7 @@ letter-spacing: 0.09em;
 color: #000000;
 }
 .how-to-add-txt-bold{
-    font-weight: 800;
+    font-weight: 600;
 }
 .hot-to-add-pos-circle{
     position: absolute;
@@ -1356,9 +1366,9 @@ line-height: 13.92px;
 } */
 
 @media(max-width:1380px){
-   .container{
+  .c-m{
     padding: 0;
-   }
+    }   
    .section-top-img>img{
     width: 100%;
    }
@@ -1574,7 +1584,7 @@ line-height: 13.92px;
     .find-country{
         margin-top: 20px;
     }
-    .country-select-wrapp{
+    .country-select-wrapp-or{
         display: block;
     }
     .how-to-add-wrapp{
@@ -1732,7 +1742,11 @@ line-height: 13.92px;
         min-width: 200px;
         object-fit: cover;
     }
-   
+   .way-blc-mid-exp{
+    max-width: 312px;
+    font-size: 12.52px;
+    line-height: 15.99px;
+   }
     .dots-style{
         right: 0;
     }
@@ -1770,6 +1784,7 @@ line-height: 13.92px;
  @media(max-width:400px){
     .country-select-present{
         padding: 0 20px;
+        display: block;
     }
     .section-form-title-connect{
         font-size: 25px;
@@ -2108,7 +2123,7 @@ line-height: 13.92px;
         line-height: 154.7%;
         letter-spacing: 0.09em;
         color: #92A35F;
-        font-weight: bold;
+        font-weight:800;
     }
  .bonus-card-btn {
     font-size: 10.7416px;
@@ -2153,10 +2168,10 @@ line-height: 13.92px;
     padding: 0 16px;
  }
  .section-ways-how-order{
-    padding: 27px 16px 0 16px;
+    padding: 24px 16px 0 16px;
  }
  .orders-ways-wrapper{
-    margin-top: 36px;
+    margin-top: 25px;
  }
  .ways-to-wrapper{
     margin-top: 25px;
@@ -2186,7 +2201,7 @@ line-height: 13.92px;
     padding-bottom: 0;
  }
  .deliver-blc, .pay-blc{
-padding: 30px 24px;
+    padding: 30px 24px;
  }
  .title-stl-ad-or{
     font-weight: 400;
@@ -2286,7 +2301,7 @@ line-height: 154.7%;
  }
  .bonus-circle>p>img{
     max-height: 50px;
-    max-width: 60px;
+    max-width: 50px;
  }
  .wrapp-bonus-icons-item>img{
     max-height: 44px;
