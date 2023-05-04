@@ -18,6 +18,8 @@
     <script src="/jquery-m/jquery.mobile.custom.min.js"> </script>
     <script src="/jquery-ui/j-ui.js"> </script>
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="/fonts_new/stylesheet.css">
     <!--<link rel="stylesheet" href="/fonts/stylesheet.css">-->
     <link rel="stylesheet" href="/css/style.css">
@@ -878,6 +880,39 @@
                         </div>
                         <div class="catalog-filter-row-item-all" style="display:none">
                             Показать все
+                        </div>
+                    </div>
+                    <div class="catalog-filter-row lineTop">
+                        <div class="catalog-filter-row-item-title">
+                            <span>
+                                Цена, ₽
+                            </span>
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 1L8 7L1 1" stroke="#695D54" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                   
+                        </div>
+                        <div class="catalog-filter-row-items" style="display:none">
+                            <div class="catalog-filter-row-items-prices-inputs">
+                                <input type="number" class="min">
+                                <input type="number" class="max">
+                            </div>
+                            <div id="slider-range"></div>
+                            <script>
+                                $( function() {
+                                  $( "#slider-range" ).slider({
+                                    range: true,
+                                    min: 0,
+                                    max: 10000,
+                                    values: [ 0, 50000 ],
+                                    slide: function( event, ui ) {
+                                      $( ".catalog-filter-row-items-prices-inputs .min" ).val( ui.values[ 0 ] );
+                                      $( ".catalog-filter-row-items-prices-inputs .max" ).val( ui.values[ 1 ] );
+                                    }
+                                  });
+                                  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                                    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+                                } );
+                            </script>
                         </div>
                     </div>
                     <div class="catalog-filter-row lineTop">
