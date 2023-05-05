@@ -669,7 +669,7 @@ textarea{
 }
 .about-container-adaptive{
     display: none;
-    padding: 0 16px;
+    padding: 0 ;
     
 }
 .mar-top{
@@ -810,6 +810,19 @@ textarea{
 
 
 /* PARTNERS */
+
+
+.container-od-wrapp{
+    width: 100%;
+    max-width: 1405px;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin: 0 auto;
+}
+
+.container-del-pay{
+
+}
 
 .section-back-connection{
     padding-bottom: 37px;
@@ -1513,6 +1526,21 @@ line-height: 13.92px;
         padding-right: 0;
     }
 }
+    @media(max-width: 768px){
+        .container-del-pay{
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 100%;
+            max-width: 1405px;
+            margin: 0 auto;
+        }
+        .container-od-wrapp{
+            padding: 0;
+        }
+        .pay-blc-back-ad{
+            background-color: #FFFFFF;
+        }
+    }
 @media(max-width:720px){
     .section-form-title{
         padding: 47px 20px 25px 20px;
@@ -2373,6 +2401,9 @@ line-height: 154.7%;
 .btw-bonus-txt{
     padding-left:0 ;
     padding-right: 0;
+}
+.par-bot-form-check{
+    margin-bottom: 0;
 }
 }
 
