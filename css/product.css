@@ -272,8 +272,8 @@
     align-items: center;
     cursor: pointer;
     background: #353430;
-    width:324px;
-    height:74px;
+    width: 290px;
+    height: 64px;
     font-weight: 800;
     font-size: 19px;
     line-height: 24px;
@@ -287,8 +287,8 @@
     transition: 0.5s;
 }
 .product-top-right-buttons .stock-block-product-vish{
-    width:74px;
-    height:74px;
+    width:64px;
+    height:64px;
 }
 
 .quick-content-right-auth{
