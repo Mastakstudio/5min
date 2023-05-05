@@ -839,7 +839,10 @@ textarea{
     display: flex;
    padding: 37px 20px 30px 20px;
 }
-.deliver-blc, .pay-blc{
+/* .deliver-blc, .pay-blc{
+    width: 50%;
+} */
+.del-blc-back-ad, .pay-blc-back-ad{
     width: 50%;
 }
 .deliver-blc-wrapp, .pay-blc-wrapp{
@@ -1484,6 +1487,9 @@ line-height: 13.92px;
         padding-right: 10px;
         margin-bottom: 10px;
     }
+    .del-blc-back-ad, .pay-blc-back-ad{
+        width: auto;
+    }
 }
 @media(max-width:880px){
     .ways-to-wrapper, .orders-ways-wrapper{
@@ -1537,9 +1543,7 @@ line-height: 13.92px;
         .container-od-wrapp{
             padding: 0;
         }
-        .pay-blc-back-ad{
-            background-color: #FFFFFF;
-        }
+
     }
 @media(max-width:720px){
     .section-form-title{
@@ -2404,6 +2408,12 @@ line-height: 154.7%;
 }
 .par-bot-form-check{
     margin-bottom: 0;
+}
+.pay-blc-back-ad{
+    background-color: #FFFFFF;
+}
+.container{
+    padding: 0;
 }
 }
 
