@@ -585,4 +585,18 @@ window.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+
+            var mh = 0;
+            $(".way-blc-mid").each(function () {
+                var h_block = parseInt($(this).height());
+                if(h_block > mh) {
+                mh = h_block;
+                };
+            });
+            $(".way-blc-mid").height(mh);
+
+   
+
 });
+
