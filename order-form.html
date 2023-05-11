@@ -735,9 +735,321 @@
     </header>
 
     <main class="main c-m">
+            <div class="form-order-title container">
+                <p class="form-order-title-stl">Оформление заказа</p>
+            </div>
+            <div class="section-recipient container">
+                <div class="form-order-reciver-wrapp">
+                    <div class="form-order-num-txt-blc">
+                        <div class="form-order-num-c">1</div>
+                        <div class="form-order-txt-c">Получатель:</div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="form-order-recip">
+                        <input type="name" placeholder="Фамилия">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Отчество">
+                        <input type="tel" placeholder="+7(900)000-00-00">
+                        <!-- <input type="text" placeholder="Комментарий к заказу">     -->
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="section-ways-d-or container">
+                <div class="form-order-w-wrapp">
+                    <div class="form-order-num-txt-blc">
+                        <div class="form-order-num-c">2</div>
+                        <div class="form-order-txt-c">Способ доставки:</div>
+                    </div>
+                </div>
+                <div class="country-select-wrapp-or select-order-form select-for-form-desc ttr">
+                    <select class="select" name="language">
+                        <option disabled>Томск</option>
+                        <option value="value1" selected>Минск</option>
+                        <option value="value2" >Могилев</option>
+                        <option value="value3">Гомель</option>
+                        <option value="value3">Брест</option>
+                        <option value="value3">Гродно</option>
+                        <option value="value3">Витебск</option>
+                    </select>
+                  <button class="find-country btn-hv">Найти</button>
+                </div>
 
+                
+                <div class="ways-to-wrapper-for-order-form">
+                    <div class="ways-to-wrapper ">
+                        <label for="cardChoise-exp">
+                            <div class="ordder-way-blc-exp ordder-way-blc-exp-fr ordder-way-blc-exp-for-form">
+                                <div class="way-blc-top-exp way-blc-top-exp-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise-exp">
+                                        <img src="./img/complite3.png" alt="">
+                                    </div>
+                                   
+                                    <p class="name-ways-order">
+                                        Экспресс доставка 
+                                    </p>
+                                </div>
+                                <div class="way-blc-mid-exp way-blc-mid-exp-for-form">
+                                    <span class="txt-stl-time-del-f">185 ₽ - </span>(Бесплатно при заказе от 2000 ₽,  в остальных случаях – по тарифам Яндекс.Такси со 100% гарантией целостности товара.)
+                                </div>
+                                <div class="time-delivery-exp">
+                                   <span class="txt-stl-time-del-f"> Срок доставки:</span><p class="time-exprees">90 минут</p>
+                                </div>
+                                <div class="way-blc-bot-exp">
+                                    Доставка будет осуществлена через сервис Яндекс.Такси в течении 90 минут после оформления и оплаты заказа.
+                                    аш номер телефона будет привязан к заказу и Вы сможете отслеживать статус доставки в одноименном приложении
+                                </div>
+                            </div>
+                        </label>
+                        <label for="cardChoise1">
+                            <div class="ordder-way-blc order-way-blc-shd ordder-way-blc-for-form">
+                                <div class="way-blc-top way-blc-top-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise1">
+                                        <img src="./img/cdek 3.png" alt="">
+                                    </div>
+                                    <p class="name-ways-order place-deliver">
+                                        Пункт выдачи
+                                    </p>
+                                </div>
+                                <div class="way-blc-mid way-blc-mid-for-form">
+                                   <span class="txt-stl-time-del-f">185 ₽ - </span> (Бесплатно при заказе от 2990 ₽)
+                                </div>
+                                <div class="time-delivery time-delivery-for-form">
+                                    <span class="txt-stl-time-del-f">Срок доставки:</span> <span class="time time-for-form"> 1-4 рабочих дня</span>
+                                </div>
+                                <div class="way-blc-bot">
+                                    Оплата онлайн на сайте или наличными / банковской картой при получении в пункте выдачи СДЭК 
+                                </div>
+                            </div>
+                        </label>
+                        <label for="cardChoise2">
+                            <div class="ordder-way-blc order-way-blc-shd">
+                                <div class="way-blc-top way-blc-top-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise2">
+                                        <img src="./img/cdek 3.png" alt="">
+                                    </div>
+                                    <p class="name-ways-order courier">
+                                        Курьер
+                                    </p>
+                                </div>
+    
+                                <div class="way-blc-mid way-blc-mid-for-form">
+                                   <span class="txt-stl-time-del-f">185 ₽ - </span> (Бесплатно при заказе от 3990 ₽, если адрес в пределах МКАД) 
+                                </div>
+                                <div class="time-delivery time-delivery-for-form">
+                                    <span class="txt-stl-time-del-f">Срок доставки:</span> <span class="time time-for-form"> 1-4 рабочих дня</span>
+                                </div>
+                                <div class="way-blc-bot">
+                                    Оплата онлайн на сайте или наличными / банковской картой при получении в пункте выдачи СДЭК
+                                </div>
+                            </div>
+                        </label>
+                        <label for="cardChoise3">
+                            <div class="ordder-way-blc order-way-blc-shd">
+                                <div class="way-blc-top way-blc-top-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise3">
+                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
+                                    </div>
+                                    <p class="name-ways-order place-deliver">
+                                        Пункт выдачи
+                                    </p>
+                                </div>
+                                <div class="way-blc-mid way-blc-mid-for-form">
+                                   <span class="txt-stl-time-del-f">185 ₽ - </span> (Бесплатно при заказе от 2990 ₽)
+                                </div>
+                                <div class="time-delivery time-delivery-for-form">
+                                    <span class="txt-stl-time-del-f">Срок доставки:</span> <span class="time time-for-form"> 1-4 рабочих дня</span>
+                                </div>
+                                <div class="way-blc-bot">
+                                    Оплата онлайн на сайте
+                                </div>
+                            </div>
+                        </label>
+                        <label for="cardChoise4">
+                            <div class="ordder-way-blc order-way-blc-shd">
+                                <div class="way-blc-top way-blc-top-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise4">
+                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
+                                    </div>
+                                    <p class="name-ways-order courier">
+                                        Курьер
+                                    </p>
+                                </div>
+                                <div class="way-blc-mid way-blc-mid-for-form">
+                                   <span class="txt-stl-time-del-f">335 ₽ </span> 
+                                </div>
+                                <div class="time-delivery time-delivery-for-form">
+                                    <span class="txt-stl-time-del-f">Срок доставки:</span> <span class="time time-for-form"> 1-4 рабочих дня</span>
+                                </div>
+                                <div class="way-blc-bot">
+                                    Оплата онлайн на сайте
+                                </div>
+                            </div>
+                        </label>
+                        <label for="cardChoise5">
+                            <div class="ordder-way-blc order-way-blc-shd ordder-way-blc-ad">
+                                <div class="way-blc-top way-blc-top-for-form">
+                                    <div>
+                                        <input type="radio" name="cardChoise" id="cardChoise5">
+                                        <img src="./img/new-cart-i-pochta 3.png" alt="">
+                                    </div>
+                                    <p class="name-ways-order place-deliver">
+                                        Пункт выдачи
+                                    </p>
+                                </div>
+                                <div class="way-blc-mid way-blc-mid-for-form">
+                                   <span class="txt-stl-time-del-f">350 ₽ - </span> (Бесплатно при заказе от 3990 ₽)
+                                </div>
+                                <div class="time-delivery time-delivery-for-form">
+                                    <span class="txt-stl-time-del-f">Срок доставки:</span> <span class="time time-for-form"> 1-4 рабочих дня</span>
+                                </div>
+                                <div class="way-blc-bot">
+                                    Оплата онлайн на сайте 
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="section-order-form-adres container">
+                <div class="form-order-w-wrapp">
+                    <div class="form-order-num-txt-blc">
+                        <div class="form-order-num-c">3</div>
+                        <div class="form-order-txt-c">Адрес доставки:</div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="country-select-wrapp-or select-order-form select-for-form-desc ttr sel-hide">
+                        <select class="select" name="language">
+                            <option disabled>Томск</option>
+                            <option value="value1" selected>Минск</option>
+                            <option value="value2" >Могилев</option>
+                            <option value="value3">Гомель</option>
+                            <option value="value3">Брест</option>
+                            <option value="value3">Гродно</option>
+                            <option value="value3">Витебск</option>
+                        </select>
+                    </div>
+                    <div class="adres-deliver-wrapp">
+                        <input type="text" placeholder="Город">
+                        <input type="text" placeholder="Дом">
+                        <input type="text" placeholder="Улица">
+                        <input type="text" placeholder="Квартира">  
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="section-ways-payd container">
+                <div class="form-order-w-wrapp">
+                    <div class="form-order-num-txt-blc">
+                        <div class="form-order-num-c">4</div>
+                        <div class="form-order-txt-c">Способ оплаты:</div>
+                    </div>
+                </div>
+                    <div class="form-order-radui-wrapp">
+                        <div class="form-order-radui-input">
+                            <input type="radio" id="Choice1"
+                            name="choisePay" value="Картой онлайн">
+                           <label for="Choice1">Картой онлайн</label>
+                        </div>
+                        <div class="form-order-radui-input">
+                            <input type="radio" id="Choice2"
+                            name="choisePay" value="Картой онлайн">
+                           <label for="Choice2">Картой при получении</label>
+                        </div>
+                        <div class="form-order-radui-input">
+                            <input type="radio" id="Choice3"
+                            name="choisePay" value="Картой онлайн">
+                           <label for="Choice3">Наличными при получении</label>
+                        </div>
+                        <div class="form-order-radui-input">
+                            <input type="radio" id="Choice4"
+                            name="choisePay" value="Картой онлайн">
+                           <label for="Choice4">Другие способы:</label>
+                        </div>
+                    </div>
+                
+                <div class="radio-under-txt">
+                    СБП, Альфа клик, Webmoney и другие способы оплаты через Юкассу
+                </div>
+            </div>
+            <div class="order-form-com-back">
+                <div class="section-order-form-com container">
+                    <div class="com-wrapp">
+                        <textarea class="t-coment" name="com" id="" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+                        <div class="check-for-coment">
+                            <div class="home-bottom-form-check check-for-gar">
+                                <div class="home-bottom-form-checkbox checkbox-order-form">
+                                    <input type="checkbox" name="" id="">
+                                    <div>
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"./>
+                                            </svg>
+                                            
+                                    </div>
+                                </div>
+                                <div class="home-bottom-form-check-text">
+                                    Не звоните мне, если товары в наличии
+                                </div>
+                              
+                            </div>
 
+                        </div>
+                        <div class="rules-for-order">
+                            Нажав «Оформить заказ», вы соглашаетесь с условиями пользовательского соглашения и даёте свое согласие на обработку своих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ «О персональных данных».
+                        </div>
+                    </div>
+                    <div class="you-order-wrapp">
+                        <div class="you-order-top">
+                            <div class="you-order-title">Ваш заказ:</div>
+                            <div class="yor-order-item"></div>
+                        </div>
+                        <div class="you-order-mid">
+                            <div class="you-order-mid-item you-order-mid-item-t">
+                                <div class="you-order-mid-item-left">Товары</div>
+                                <div class="you-order-mid-item-right">5970₽</div>
 
+                            </div>
+                            <div class="you-order-mid-item you-order-mid-item-d">
+                                <div class="you-order-mid-item-left">Доставка</div>
+                                <div class="you-order-mid-item-right">452₽</div>
+                            </div>
+                            <div class="you-order-mid-item you-order-mid-item-s">
+                                <div class="you-order-mid-item-left">Скидка</div>
+                                <div class="you-order-mid-item-right you-order-mid-item-right-sk">- 540₽</div>
+                            </div>
+                            <div class="you-order-mid-item-ad ">
+                                <div class="you-order-mid-item-left">Стоимость товаров</div>
+                                <div class="you-order-mid-item-right you-order-mid-item-right-sk"> 1.990₽ </div>
+                            </div>
+                            <div class="you-order-mid-item-ad ">
+                                <div class="you-order-mid-item-left">Стоимость товаров</div>
+                                <div class="you-order-mid-item-right you-order-mid-item-right-sk"> 1.990₽ </div>
+                            </div>
+                        </div>
+                        <div class="you-order-bot">
+                            <div class="end-order">
+                                <div class="end-order-left">Итого:</div>
+                                <div class="end-order-right">5882₽</div>
+                            </div>
+                            <div class="bonus-order">
+                                <div class="bonus-order-left">Начисленные бонусы</div>
+                                <div class="bonus-right">532шт</div>
+                            </div>
+                        </div>
+                        <div class="you-order-btn">
+                            <p>Оформить заказ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <script src="./js/main.js"></script> 
 </body>
