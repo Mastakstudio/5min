@@ -892,6 +892,7 @@ textarea{
     display: flex;
     justify-content: center;
     list-style: none;
+    cursor: pointer;
   }
   
   .dots-style button {
@@ -903,6 +904,7 @@ textarea{
     height: 9px;
     margin: 1px;
     outline: none;
+    cursor: pointer;
   }
   
   .dots-style li[class="slick-active"] button {
