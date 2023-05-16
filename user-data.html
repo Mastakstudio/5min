@@ -746,13 +746,12 @@
                     <li class="user-data-link">Изменить пароль</li>
                     <li class="user-data-link">Мои отзывы</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
                 </ul>
            </div>
             
            <div class="user-title-wrapp-ad">
                 <div class="user-data-title-ad">Личные данные</div>
-                <div class="user-exit-wrapp-img">
+                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
                     <img src="./img/Mask group exit.png" alt="">
                     <div class="user-exit-link-img">
                         <span>Выход</span>
@@ -777,7 +776,7 @@
                     <li class="user-data-link">Изменить пароль</li>
                     <li class="user-data-link">Мои отзывы</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
+                    <li onclick="openExitPopup()" class="user-data-link">Выход</li>
                 </ul>
                 <div class="user-data-level-bonus">
 
@@ -907,6 +906,13 @@
         </div>
         
     </main>
+    <div class="exit-popup-wrapp">
+        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
+        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
+        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
+        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
+    </div>
+    <div class="bg-popup"></div>
     <script src="./js/main.js"></script> 
 </body>
 </html>

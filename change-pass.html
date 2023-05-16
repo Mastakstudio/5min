@@ -746,13 +746,12 @@
                     <li class="user-data-link user-data-link-open-ad">Изменить пароль</li>
                     <li class="user-data-link">Мои отзывы</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
                 </ul>
            </div>
             
            <div class="user-title-wrapp-ad">
                 <div class="user-data-title-ad">Изменить пароль</div>
-                <div class="user-exit-wrapp-img">
+                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
                     <img src="./img/Mask group exit.png" alt="">
                     <div class="user-exit-link-img">
                         <span>Выход</span>
@@ -776,13 +775,13 @@
                     <li class="user-data-link ">Мои заказы</li>
                     <li class="user-data-link user-data-link-open">Изменить пароль</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
+                    <li onclick="openExitPopup()" class="user-data-link">Выход</li>
                 </ul>
             </div>
             
-            <div class="user-data-form-wrapp">
+            <div class="user-data-form-wrapp user-form-pass-wrapp-pass">
                 <form  action="">
-                   <div class="user-form-pass-wrapp">
+                   <div class="user-form-pass-wrapp ">
                         <div class="user-data-input-container user-data-input-container-pass "><label for="us-dt-n">Текущий пароль</label><input id="us-dt-n" type="text" placeholder=""></div>
                         <div class="user-data-input-container user-data-input-container-pass user-data-input-pass user-data-input-22"><label for="us-dt-sn">Новый пароль</label><input id="us-dt-sn" type="text" placeholder=""> </div>
                         <div class="user-data-input-container user-data-input-container-pass user-data-input-22"><label for="us-dt-lsn">Новый пароль еще раз</label><input id="us-dt-lsn" type="text" placeholder=""> </div>
@@ -878,6 +877,13 @@
         </div>
         
     </main>
+    <div class="exit-popup-wrapp">
+        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
+        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
+        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
+        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
+    </div>
+    <div class="bg-popup"></div>
     <script src="./js/main.js"></script> 
 </body>
 </html>
