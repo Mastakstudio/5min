@@ -6,6 +6,7 @@
     outline: none;
 }
 
+
 .btn-hv:hover{
     background: #92A35F;
     transition: 0.5s;
@@ -47,9 +48,13 @@
     margin-bottom: 30px;
     cursor: pointer;
 }
+.user-data-link-first-el{
+    margin-bottom: 27px;
+}
 .user-data-link:last-child{
     margin-bottom: 0;
 }
+
 .user-data-link-open{
     color: #F09661;     
 }
@@ -80,6 +85,7 @@
     letter-spacing: 0.09em;
     color: #000000;
     max-width: 240px;
+    margin-top: 7px;
 }
 
 
@@ -90,7 +96,7 @@
     
 }
 .user-data-input-container{
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 .user-data-input-container>input{
     width: 387.18px;
@@ -178,6 +184,11 @@
     margin-top: 32px;
     cursor: pointer;
     margin-bottom: 62px;
+    margin-left: 0;
+}
+.user-data-btn-pass{
+    margin-top: 55px;
+    margin-left: 135px;
 }
 .user-data-btn-ad{
     width: 297.73px;
@@ -210,10 +221,9 @@
 .user-data-links-wrapp{
     width: auto;
 }
-.user-data-btn{
-    margin-left: 135px;
+.user-data-input-pass{
+    margin-bottom: 33px;
 }
-
 
 /* MY-ORDERS PAGEEEEEEEE */
 
@@ -313,7 +323,14 @@
     padding-bottom: 13px;
     border-bottom: 1px solid #D9D9D9;
 }
+.order-item-container{
+    margin-bottom: 30px;
+}
 
+.order-item-container:nth-last-child(-n+2)
+{
+    margin-bottom: 0;
+}
 .my-order-result-container{
     padding: 14px 0 12px 0;
     border-bottom: 1px solid #D9D9D9;
@@ -467,19 +484,18 @@
     padding: 27px 13px 25px 13px;
     width: 560px;
     height: 828px;
-    top: 50%;
+    top: 48%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 5;
+    position: fixed;
+    z-index: 20;
     display: none;
 }
 .my-order-popup-title{
     padding-left: 21px;
     padding-bottom: 24px;
     border-bottom: 1px solid #D9D9D9;
-   
 }
 .my-order-popup-title-stl{
     font-family: 'Circe';
@@ -720,11 +736,12 @@
 
 .section-my-review-wrapp{
     width: 100%;
-    margin-left: 80px;
+    margin-left: 45px;
     margin-top: 75px;
     padding-right: 20px;
     margin-right: 14px;
     margin-bottom: 64px;
+
 }   
 
 .order-review-wrapp{
@@ -742,7 +759,7 @@
 }
 .order-review-left{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .order-review-img-mobile{
     display: none;
@@ -758,6 +775,7 @@
 }
 .order-review-desc{
     margin-left: 25px;
+    margin-top: 40px;
 }
 .order-review-top-desc{
     font-family: 'Circe';
@@ -779,7 +797,7 @@
     margin-top: 12px;
 }
 .order-review-raiting-wrapp{
-    margin-right: 172px;
+    margin-right: 152px;
     
 
 }
@@ -789,12 +807,16 @@
     font-weight: 400;
     font-size: 13.0006px;
     line-height: 17px;
-
+    margin-bottom: 7px;
     letter-spacing: 0.09em;
     color: #000000;
+    margin-top: 39px;
 }
 .your-review-stars-row{
   
+}
+.reviews-tab-review-rating>svg{
+    margin-right: 1px;
 }
 .your-review-stars-top{
     display: flex;
@@ -809,6 +831,10 @@
     letter-spacing: 0.09em;
     color: #ADADAD;
     margin-left: 16px;
+    padding-top: 5px;
+}
+.rating__result{
+    
 }
 .your-review-date-stars{
     font-family: 'Circe';
@@ -818,6 +844,7 @@
     line-height: 20px;
     letter-spacing: 0.09em;
     color: #949494;
+    padding-top: 3px;
 }
 .your-review-stars-wrapp-bot{
     margin-top: 36px;
@@ -843,9 +870,9 @@
 }
 
 
-.rating {
-  
- }
+    .rating {
+    
+    }
  
  .rating__star {
     cursor: pointer;
@@ -854,9 +881,114 @@
  .order-review-cont{
     width: 100%;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
  }
+
+ .user-data-links-wrapp-for-data{
+    width: 45%;
+}
+.user-order-link-stl-review{
+    width: 32%;
+}
+
+
+/* Exit Popup */
+
+
+.exit-popup-wrapp{
+    position: absolute;
+    left: 20%;
+    top:20%;
+    width: 560px;
+    height: 298px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: none;
+    padding-top: 41px;
+}
+.exit-popup-img{
+    width: 41px;
+    height: 41px;
+    margin: 0 auto;
+}
+.exit-popup-img>img{
+    width: 100%;
+    height: 100%;
+   
+}
+.exit-popup-txt{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.1206px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 29px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exit-popup-txt>p{
+    max-width: 358px;
+}
+.exit-popup-btn{
+    padding: 18px 0 17px 0;
+    background: #353430;
+    cursor: pointer;
+    width: 252px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.4163px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+.exit-popup-close{
+    top:15px
+}
+.exit-popup-status{
+    margin-top: 9px;
+    margin-left: 13px;
+}
+.exit-popup-close{
+    position: absolute;
+    z-index: 6;
+    right: 15px;
+    cursor: pointer;
+    width: 11px;
+    height: 16px;
+}
+.exit-popup-close:hover::after ,.exit-popup-close:hover::before{
+    background-color: #92A35F;
+}
+.exit-popup-close::before{
+    content: '';
+    width: 2px;
+    height: 24px;
+    background-color: #000;
+    position: absolute;
+    transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+    border-radius: 21px;
+}
+.exit-popup-close::after{
+    content: '';
+    width: 2px;
+    height: 24px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 21px;
+    transform: rotate(-45deg);
+}
+
 /* MEDIAAAAAAA */
 @media(max-width:1300px){
     .user-data-links-wrapp{
@@ -920,8 +1052,13 @@
         margin-left: 20px;
     }
     .user-form-pass-wrapp{
-
-    margin: 0 auto;
+        margin-left: 0;
+    }
+    .user-data-input-container-pass{
+        text-align: center;
+    }
+    .user-data-input-container>input{
+        max-width: 387px;
     }
     .section-my-order-wrapp{
        width: 100%;
@@ -956,8 +1093,31 @@
     .my-order-popup{
 
     }
+    .order-item-price{
+        margin-right: 0;
+    }
+    .order-item-wrapp{
+        display: block;
+    }
+    .order-item-desc-wrapp{
+        align-items: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+@media(max-width:500px){
+    .my-order-data-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .number-order, .date-order, .time-order, .status-order, .info-order{
+        margin: 5px 0;
+    }
 }
 @media(max-width:400px){
+    .number-order, .date-order, .time-order, .status-order, .info-order{
+        margin: 0;
+    }
     .user-data-title{
         display: none;
     }
@@ -988,6 +1148,8 @@
     }
     .user-data-container{
         display: block;
+        /* margin-left: 6px;
+        margin-right: 6px; */
     }
     .user-data-links-wrapp{
     
@@ -1005,9 +1167,8 @@
     .user-data-list{
         display: flex;
         overflow-x: hidden;
-        padding: 0 15px;
-        /* border-bottom: 1px solid #E1E1E1;
-        border-top: 1px solid #E1E1E1; */
+        margin: 0 9px;
+        padding: 0 16px;
         padding-top: 13px;
         overflow-x: scroll ;
         white-space: nowrap;
@@ -1017,7 +1178,7 @@
     }
     .user-data-list::-webkit-scrollbar{
        height: 3px;
-       background: rgba(187, 187, 187, 0.06);
+       /* background: rgba(187, 187, 187, 0.06); */
        box-shadow: inset 0px 0px 2.66667px rgba(0, 0, 0, 0.25);   
        margin-left: 10px;     
     }
@@ -1025,7 +1186,7 @@
         background-color: #000;
         border-radius: 9em;
         width: 127px;
-        box-shadow: inset 1px 1px 10px #f3faf7;
+        /* box-shadow: inset 1px 1px 10px #f3faf7; */
  
     }       
     .user-data-link{
@@ -1084,7 +1245,7 @@
     .user-data-btn-ad{
         width: 100%;
         margin-top: 52px;
-        margin-bottom: 37px;
+        margin-bottom: 0;
         display: block;
         font-size: 15px;
         line-height: 19px;
@@ -1101,7 +1262,7 @@
         background: rgba(216, 216, 216, 0.18);
     }
     .user-form-date-bot-ad{
-        padding:22px 21px 37px  21px;
+        padding:28px 21px 37px  21px;
         display: block;
         background: rgba(216, 216, 216, 0.18);
     }
@@ -1112,7 +1273,7 @@
         display: flex;
         align-items: center;
         margin-top: 26px;
-        margin-left: 19px;
+        margin-left: 14px;
     }
     .user-exit-wrapp-img>img{
         max-width: 16px;
@@ -1122,13 +1283,13 @@
         display: flex;
         align-items: center;
         color: #F09661;
-        margin-left: 8px;
+        margin-left: 4px;
     }
     .user-exit-link-img>span{
        border-bottom: 1px solid #F09661;
        font-weight: 400;
        font-size: 15.66px;
-       padding-top: 5px;
+       padding-top: 2px;
        
        line-height: 12px;
     }
@@ -1140,7 +1301,7 @@
        align-items: center;
     }
     .user-data-form-wrapp{
-        padding-bottom: 0;
+        padding-bottom: 45px;
     }
     .user-form-date-mid{
         margin-top: 0;
@@ -1161,8 +1322,11 @@
     .user-data-input-container-bot>input{
         margin-bottom: 0;
     }
+    .user-data-links-wrapp-ad>div>.user-data-list>.user-data-link{
+    color: rgba(0, 0, 0, 0.37);
+    }
     .user-data-link-open-ad{
-        color: #F09661;
+        color: #F09661 !important;
         font-weight: 800;
     }
     .give-bonuse, .result{
@@ -1171,7 +1335,7 @@
     .info-order-mobile{
         display: block;
         margin-left: 0;
-        margin-top: 27px;
+        margin-top: 25px;
     }
     .info-order-desktop{
         display: none;
@@ -1209,11 +1373,27 @@
     }
     .status-order-stl{
         margin-left: 0;
-        line-height: 0;
+        font-size: 14.8332px;
+        line-height: 19px;
     }
     .my-order-data-container{
         padding-top: 17px;
         padding-bottom: 5px;
+        margin-top: 0;
+        border-top: none;
+        border-bottom: 0;
+        position: relative;
+        
+    }
+    .my-order-data-container::after{
+        content: '';
+        width: 110%;
+        height: 1px;
+        bottom: 0;
+        left: -5%;
+        position: absolute;
+        background-color: #D9D9D9;
+        overflow: hidden;
     }
     .my-order-data-moblile{
         margin-bottom: 10px;
@@ -1261,13 +1441,13 @@
         margin-bottom: 20px;
     }
     .my-order-items-container{
-        margin-top: 14px;
+        margin-top: 13px;
     }
     .order-item-container{
-        margin-bottom: 28px;
+        margin-bottom: 26px;
     }
     .order-item-price{
-        margin-top: 8px;
+        margin-top: 9px;
     }
 
     .order-item-price-now{
@@ -1291,6 +1471,7 @@
         display: flex;
         align-items: normal;
         padding-bottom: 21px;
+        justify-content:start;
     }
     .order-review-img-desktop{
         display: none;
@@ -1301,10 +1482,11 @@
     .order-review-raiting-wrapp{
         margin-right: 0;
         margin-left: 22px;
-        margin-top: 12px;
+        margin-top: 10px;
     }
     .order-review-desc{
-        margin-left: 22px;
+        margin-left: 21px;
+        margin-top: 2px;
     }
     .order-review-top-desc{
         font-size: 10.1246px;
@@ -1318,6 +1500,8 @@
     .your-review-raiting{
         font-size: 10.5852px;
         line-height: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
     }
     .your-review-num-stars{
         font-size: 17.0715px;
@@ -1327,14 +1511,14 @@
         margin-top: 20px;
     }
     .your-review-comment-txt{
-        margin-top: 12px;
+        margin-top: 13px;
     }  
     .review-comment-wrapp{
         padding-bottom: 40px;
     }
 
     .my-order-popup-title{
-        padding-left: 19px;
+        padding-left: 13px;
         padding-bottom: 15px;
         padding-top: 14px;
     }
@@ -1350,7 +1534,7 @@
         line-height: 29px;
     }
     .my-order-recipient{
-        padding-left: 19px;
+        padding-left: 13px;
     }
     .my-order-recipient-title{
         font-size: 16.0112px;
@@ -1363,22 +1547,24 @@
     }
     .my-order-recipient-name{
         margin-top: 10px;
+        margin-left: 2px;
     }
     .my-order-recipient-name, .my-order-recipient-tel, .my-order-recipient-email{
         font-size: 12.809px;
         line-height: 16px;
         margin-bottom: 10px;
+        margin-left: 2px;
     }
     .my-order-time-title{
         font-size: 16.0112px;
         line-height: 144.7%;
-        margin-left: 19px;
+        margin-left: 15px;
         margin-top: 7px;
     }
     .my-order-time{
         font-size: 12.809px;
         line-height: 16px;
-        margin-left: 19px;
+        margin-left: 15px;
         margin-top: 8px;
     }
     .my-order-addres{
@@ -1388,24 +1574,25 @@
         font-size: 16.0112px;
         line-height: 144.7%;
         margin-top: 16px;
+        margin-left: 13px;
     }
     .my-order-addres-loc{
         font-size: 12.809px;
         line-height: 16px;
-        margin-left: 19px;
+        margin-left: 15px;
         margin-top: 10px;
     }
     .my-order-pay-title{
         font-size: 16.0112px;
         line-height: 144.7%;
         margin-top: 5px;
-        margin-left: 19px;
+        margin-left: 13px;
         margin-bottom: 12px;
     }
     .my-order-pay-item{
         font-size: 12.809px;
         line-height: 16px;
-        margin-left: 19px;
+        margin-left: 15px;
         margin-bottom: 7px;
     }
     .my-order-result-txt{
@@ -1431,26 +1618,30 @@
     }
     .my-order-pay-result{
         margin-top: 23px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .my-order-popup{
-        width: 360px;
+        z-index: 20;
+        width: 100%;
         height:auto;
         padding-top: 0;
-        padding-left: 13px;
-        padding-right: 13px;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-bottom: 19px;
+        max-width: 360px;
+        position: fixed;
     }
     .my-order-popup-close{
-        top:18px
+        top:15px
     }
     .my-order-popup-status{
         margin-top: 9px;
+        margin-left: 13px;
     }
     .my-order-popup-close{
         position: absolute;
         z-index: 6;
-        right: 17px;
+        right: 15px;
         cursor: pointer;
         width: 11px;
         height: 16px;
@@ -1461,7 +1652,7 @@
     .my-order-popup-close::before{
         content: '';
         width: 2px;
-        height: 16px;
+        height: 24px;
         background-color: #000;
         position: absolute;
         transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
@@ -1470,10 +1661,119 @@
     .my-order-popup-close::after{
         content: '';
         width: 2px;
-        height: 16px;
+        height: 24px;
         background-color: #000;
         position: absolute;
         border-radius: 21px;
         transform: rotate(-45deg);
+    }
+    .order-review-cont{
+        max-width: 180px;
+    }
+    .order-review-img-mobile{
+        max-width: 135px;
+        max-height: 123px;
+    }
+    .order-review-img>img{
+        max-width: 135px;
+        max-height: 123px;
+    }
+    .order-item-desc-wrapp{
+        margin-top: 0;
+        margin-left: 25px;
+    }
+    .number-order-mobile, .date-order-mobile, .time-order-mobile, .status-order-mobile {
+        display: block;
+    }
+    .user-form-pass-wrapp{
+        margin-top: 30px;
+    }
+    .user-data-btn-pass-ad{
+        margin-top: 37px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .user-data-input-container-pass{
+        text-align: left;
+    }
+    .section-my-order-wrapp{
+       padding-bottom: 0;
+    }
+    .my-order-result-container{
+        border-bottom: 0;
+        padding-top: 20px;
+    }
+    .my-order-items-container{
+        border-bottom: 0;
+    }
+    .order-result-bot{
+        margin-top: 17px;
+    }
+    .my-order-pay-item-stl{
+        font-weight: 800;
+    }
+
+    .reviews-tab-review-rating>svg{
+        width: 22px;
+        height: 23px;
+    }
+    .reviews-tab-review-rating-bot>svg{
+        width: 19px;
+        height: 20px;
+    }
+    .exit-popup-wrapp{
+        position: absolute;
+        top:20%;
+        left: 16px;
+        width: 359px;
+        height: 217px;
+        background-color: #fff;
+        border: 1px solid #000;
+        display: none;
+        padding-top: 27px;
+    }
+    .exit-popup-img{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    .exit-popup-img>img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .exit-popup-txt{
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.5595px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.09em;
+        color: #000000;
+        margin-top: 15px;
+        margin-bottom: 21px;
+       
+ 
+    }
+    .exit-popup-txt>p{
+        max-width: 268px;
+    }
+    .exit-popup-btn{
+        padding: 15px 0 13px 0;
+        background: #353430;
+        cursor: pointer;
+        width: 200.11px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 400;
+
+        font-size: 10.6537px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.09em;
+        color: #FFFFFF;
     }
 }  

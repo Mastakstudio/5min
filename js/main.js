@@ -607,6 +607,7 @@ let closeBtnPopup = document.querySelector('.my-order-popup')
 let openInfoPopup =document.querySelector('.openPopup')
 let mainPopup = document.querySelector('.main')
 
+
 function openPopup(){
     closeBtnPopup.style.display = 'block';
     document.body.style.backgroundColor = '#E5E5E5'
@@ -619,59 +620,24 @@ function closePopup(){
     document.body.style.backgroundColor = '#fff'
     mainPopup.style.pointerEvents = 'auto'
 }
+//js for popup exit//    
 
+let exitBtn = document.querySelector('.exit-btn')
+let exitPopup = document.querySelector('.exit-popup-wrapp')
 
-//STRARSSSSS//
-// const ratingStars = [...document.getElementsByClassName("rating__star")];
+// let exitAccBtn = document.querySelector('.exit-popup-btn')
 
-// function executeRating(stars) {
-//   const starClassActive = "rating__star fas fa-star";
-//   const starClassInactive = "rating__star far fa-star";
-//   const starsLength = stars.length;
-//   let i;
-//   stars.map((star) => {
-//     star.onclick = () => {
-//       i = stars.indexOf(star);
-
-//       if (star.className===starClassInactive) {
-//         for (i; i >= 0; --i) stars[i].className = starClassActive;
-//       } else {
-//         for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
-//       }
-//     };
-//   });
-// }
-// executeRating(ratingStars);
-
-
-const ratingStars = [...document.getElementsByClassName("rating__star")];
-const ratingResult = document.querySelector(".rating__result");
-
-printRatingResult(ratingResult);
-
-function executeRating(stars, result) {
-   const starClassActive = "rating__star fas fa-star";
-   const starClassUnactive = "rating__star far fa-star";
-   const starsLength = stars.length;
-   let i;
-   stars.map((star) => {
-      star.onclick = () => {
-         i = stars.indexOf(star);
-
-         if (star.className.indexOf(starClassUnactive) !== -1) {
-            printRatingResult(result, i + 1);
-            for (i; i >= 0; --i) stars[i].className = starClassActive;
-         } else {
-            printRatingResult(result, i);
-            for (i; i < starsLength; ++i) stars[i].className = starClassUnactive;
-         }
-      };
-   });
+function openExitPopup(){
+    document.body.style.backgroundColor = '#E5E5E5'
+    mainPopup.style.pointerEvents = 'none'
+    exitPopup.style.display = 'block';
 }
 
-function printRatingResult(result, num = 0) {
-   result.textContent = `${num}.0`;
+function closeExitPopup(){
+    document.body.style.backgroundColor = '#fff'
+    exitPopup.style.display = 'none'
+    mainPopup.style.pointerEvents = 'auto'
 }
 
-executeRating(ratingStars, ratingResult);
+
 

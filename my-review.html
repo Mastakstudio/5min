@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="css/user-data.css">
 </head>
 <body>
-    <!-- <div class="mob-bottom-menu">
+    <div class="mob-bottom-menu">
         <div class="mob-bottom-menu-item">
             <div class="header-menu-catalog">
                 <div class="header-menu-catalog-button">
@@ -734,7 +734,7 @@
             </div>
         </div>
         <div class="header-shadow"></div>
-    </header> -->
+    </header>
 
     <main class="main ">
         <div class="section-user-data container">
@@ -743,18 +743,17 @@
         <div class="user-data-links-wrapp-ad ">
            <div>
                 <ul class="user-data-list">
-                    <li class="user-data-link ">Личные данные</li>
+                    <li class="user-data-link">Личные данные</li>
                     <li class="user-data-link">Мои заказы</li>
                     <li class="user-data-link ">Изменить пароль</li>
                     <li class="user-data-link user-data-link-open-ad">Мои отзывы</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
                 </ul>
            </div>
             
            <div class="user-title-wrapp-ad">
                 <div class="user-data-title-ad">Мои отзывы</div>
-                <div class="user-exit-wrapp-img">
+                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
                     <img src="./img/Mask group exit.png" alt="">
                     <div class="user-exit-link-img">
                         <span>Выход</span>
@@ -772,14 +771,14 @@
             </div>
         </div>
         <div class="user-data-container container">
-            <div class="user-data-links-wrapp user-order-link-stl">
+            <div class="user-data-links-wrapp user-order-link-stl-review">
                 <ul class="user-data-list">
                     <li class="user-data-link ">Изменить пароль</li>
                     <li class="user-data-link ">Мои заказы</li>
                     <li class="user-data-link ">Изменить пароль</li>
                     <li class="user-data-link user-data-link-open">Мои отзывы</li>
                     <li class="user-data-link">Избранные товары</li>
-                    <li class="user-data-link">Выход</li>
+                    <li onclick="openExitPopup()" class="user-data-link exit-btn">Выход</li>
                 </ul>
                 <div class="user-data-level-bonus">
 
@@ -806,14 +805,24 @@
                             <div class="your-review-raiting">Ваша оценка:</div>
                             <div class="your-review-stars-row">
                                 <div class="your-review-stars-top">
-                                    <div class="rating">
-                                            <i class="rating__star far fa-star"></i>
-                                            <i class="rating__star far fa-star"></i>
-                                            <i class="rating__star far fa-star"></i>
-                                            <i class="rating__star far fa-star"></i>
-                                            <i class="rating__star far fa-star"></i>
+                                    <div class="reviews-tab-review-rating">
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#C5C5C5"></path>
+                                        </svg>
                                     </div>
-                                    <div class="your-review-num-stars"><span class="rating__result"></span></div>
+                                    <div class="your-review-num-stars"><span class="rating__result">4.0</span></div>
                                 </div>
                         
                             </div>
@@ -823,14 +832,23 @@
                 <div class="review-comment-wrapp">
                     <div class="your-review-stars-wrapp-bot">
                         <div class="your-review-stars-bot ">
-                            
-                            <div class="rating">
-                                <i class="rating__star far fa-star"></i>
-                                <i class="rating__star far fa-star"></i>
-                                <i class="rating__star far fa-star"></i>
-                                <i class="rating__star far fa-star"></i>
-                                <i class="rating__star far fa-star"></i>
-                          </div>
+                            <div class="reviews-tab-review-rating reviews-tab-review-rating-bot">
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#C5C5C5"></path>
+                                </svg>
+                            </div>
                         </div>
                         <div class="your-review-date-stars">
                             25 мая 2022
@@ -926,41 +944,12 @@
         </div>
         
     </main>
-    <!-- <div class="my-order-popup">
-        <div  onclick="closePopup()" class="my-order-popup-close">
-            
-        </div>
-        <div class="my-order-popup-title">
-            <span class="my-order-popup-title-stl">Заказ:</span>
-            <span class="my-order-popup-title-num-order">№2567</span>
-           
-        </div>
-        <div class="my-order-recipient">
-            <div class="my-order-recipient-title">Получатель:</div>
-            <div class="my-order-recipient-name">Иванов Иван Иванович</div>
-            <div class="my-order-recipient-tel">+7(900)000-00-00</div>
-            <div class="my-order-recipient-email">email@email.ru</div>
-        </div>
-        <div class="my-order-popup-time">
-            <div class="my-order-time-title">Дата и время заказа:</div>
-            <div class="my-order-time">8 марта в 18:36</div>
-        </div>
-        <div class="my-order-addres">
-            <div class="my-order-addres-title">Доставка:</div>
-            <div class="my-order-addres-loc">г. Москва, ул. Каргопольская, д. 58 кв. 7</div>
-        </div>
-        <div class="my-order-popup-pay">
-            <div class="my-order-pay-title">Оплачено:</div>
-            <div class="my-order-pay-item my-order-pay-item-top"><p>Скидка бонусами</p><p>586₽</p></div>
-            <div class="my-order-pay-item my-order-pay-item-bot"><p>Скидка по акции</p><p>268₽</p></div>
-            <div class="my-order-pay-item"><p>Сумма без скидки</p><p>3678₽</p></div>
-            <div class="my-order-pay-result"><p class="my-order-result-txt">Итого:</p><p class="my-order-result-num">2692₽</p></div>
-        </div>
-        <div class="my-order-popup-status">
-            <span class="my-order-status-txt">Статус:</span>
-            <span class="my-order-status-info">Доставлено</span>
-        </div>
-    </div> -->
+    <div class="exit-popup-wrapp">
+        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
+        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
+        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
+        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
+    </div>
     <script src="./js/main.js"></script> 
 </body>
 </html>
