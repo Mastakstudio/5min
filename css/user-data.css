@@ -480,11 +480,10 @@
 
 .my-order-popup{
     background: #fff;
-    border: 1px solid #000;
     padding: 27px 13px 25px 13px;
     width: 560px;
     height: 828px;
-    top: 48%;
+    top: 595px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -700,9 +699,9 @@
     position: absolute;
     z-index: 6;
     top: 56px;
-    right: 17px;
+    right: 14px;
     cursor: pointer;
-    width: 11px;
+    width: 24px;
     height: 24px;
 }
 .my-order-popup-close:hover::after ,.my-order-popup-close:hover::before{
@@ -716,6 +715,7 @@
     position: absolute;
     transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
     border-radius: 21px;
+    left: 50%;
 }
 .my-order-popup-close::after{
     content: '';
@@ -725,6 +725,7 @@
     position: absolute;
     border-radius: 21px;
     transform: rotate(-45deg);
+    left: 50%;
 }
 
 
@@ -906,7 +907,6 @@
     width: 560px;
     height: 298px;
     background-color: #fff;
-    border: 1px solid #000;
     display: none;
     padding-top: 41px;
 }
@@ -965,10 +965,10 @@
 .exit-popup-close{
     position: absolute;
     z-index: 6;
-    right: 15px;
+    right: 2px;
     cursor: pointer;
-    width: 11px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 .exit-popup-close:hover::after ,.exit-popup-close:hover::before{
     background-color: #92A35F;
@@ -1001,6 +1001,7 @@
     top: 0;
     left: 0;
 }
+
 
 /* MEDIAAAAAAA */
 @media(max-width:1300px){
@@ -1116,6 +1117,11 @@
         align-items: center;
         margin-left: 0;
         margin-top: 10px;
+    }
+}
+@media(max-width:600px){
+    .my-order-popup{
+       width: auto;
     }
 }
 @media(max-width:500px){
@@ -1646,6 +1652,8 @@
         padding-bottom: 19px;
         max-width: 360px;
         position: fixed;
+        top:415px;
+        /* margin-top: 595px; */
     }
     .my-order-popup-close{
         top:15px
@@ -1657,10 +1665,10 @@
     .my-order-popup-close{
         position: absolute;
         z-index: 6;
-        right: 15px;
+        right: 12px;
         cursor: pointer;
-        width: 11px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
     }
     .my-order-popup-close:hover::after ,.my-order-popup-close:hover::before{
         background-color: #92A35F;
@@ -1738,7 +1746,7 @@
         height: 20px;
     }
     .exit-popup-wrapp{
-        top: 48%;
+        top: 38%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);

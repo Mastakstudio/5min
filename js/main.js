@@ -646,4 +646,23 @@ function closeExitPopup(){
 }
 
 
+// popup order tgiven
+
+let openTgivenPopup = document.querySelector('.popup-tgiven-wrapp')
+let youOrderBtn = document.querySelector('.you-order-btn')
+
+function openGivenPopup(){
+    openTgivenPopup.style.display = 'block';
+    mainPopup.style.pointerEvents = 'none'
+    document.body.style.overflow = 'hidden'
+    bgForPopup.style.display = 'block';
+
+  
+}
+function closeGivenPopup(){
+    openTgivenPopup.style.display = 'none';
+    mainPopup.style.pointerEvents = 'none'
+    document.body.style.overflow = 'auto'
+    bgForPopup.style.display = 'none';
+}
 
