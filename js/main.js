@@ -597,6 +597,53 @@ window.addEventListener("DOMContentLoaded", function() {
             $(".way-blc-mid").height(mh);
 
    
-
+     
 });
+
+
+
+//js for my-order-page//
+let closeBtnPopup = document.querySelector('.my-order-popup')
+let openInfoPopup =document.querySelector('.openPopup')
+let mainPopup = document.querySelector('.main')
+let headerBg = document.querySelector('.test')
+let bgForPopup = document.querySelector('.bg-popup')
+
+function openPopup(){
+    closeBtnPopup.style.display = 'block';
+    mainPopup.style.pointerEvents = 'none'
+    document.body.style.overflow = 'hidden'
+    bgForPopup.style.display = 'block';
+}
+
+function closePopup(){
+    closeBtnPopup.style.display = 'none'
+    document.body.style.backgroundColor = '#fff'
+    mainPopup.style.pointerEvents = 'auto'
+    document.body.style.overflow = 'auto'
+    bgForPopup.style.display = 'none';
+}
+//js for popup exit//    
+
+
+
+let exitBtn = document.querySelector('.exit-btn')
+let exitPopup = document.querySelector('.exit-popup-wrapp')
+
+
+function openExitPopup(){
+    bgForPopup.style.display = 'block';
+    mainPopup.style.pointerEvents = 'none'
+    exitPopup.style.display = 'block';
+    document.body.style.overflow = 'hidden'
+}
+
+function closeExitPopup(){
+    bgForPopup.style.display = 'none';
+    exitPopup.style.display = 'none'
+    mainPopup.style.pointerEvents = 'auto'
+    document.body.style.overflow = 'auto'
+}
+
+
 
