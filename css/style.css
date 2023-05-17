@@ -1189,10 +1189,9 @@ box-shadow: 0px -1px 14px rgba(0, 0, 0, 0.22);
 }
 .home-header-blocks-block-text{
     font-weight: 300;
-font-size: 14.6348px;
-line-height: 18px;
-
-color: #1A1919;
+    font-size: 14.6348px;
+    line-height: 18px;
+    color: #1A1919;
 }
 
 @media(max-width:768px){
@@ -1200,7 +1199,7 @@ color: #1A1919;
         display: none;
     }
     .main{
-        padding-top:121.5px;
+        padding-top:175.5px;
     }
 }
 
