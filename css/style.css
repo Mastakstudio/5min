@@ -3774,11 +3774,14 @@ color: #000000;
     position: fixed;
     top:0;
     left:0;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     backdrop-filter: blur(5px);
     z-index: 1000000;
     background: #0000006b;
+}
+.right-popup-cont.show{
+    display: flex;
 }
 .right-popup{
     height:100%;
