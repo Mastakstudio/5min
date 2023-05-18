@@ -678,9 +678,12 @@ function closeGivenPopup(){
   
 }
 
-$(document).mouseup(function (e) {
-    var container = $("body");
-    if (container.has(e.target).length === 1){
-        closeGivenPopup()
-    }
-});
+if(window.innerWidth>400){
+    $(document).mouseup(function (e) {
+        var container = $("body");
+        if (container.has(e.target).length === 1){
+            closeGivenPopup()
+        }
+    });
+}
+
