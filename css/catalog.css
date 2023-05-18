@@ -230,6 +230,12 @@ margin-top:28px;
     color: #000000;
     text-align: center;
 }
+.catalog-top-view input::-webkit-outer-spin-button,
+.catalog-top-view input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .catalog-top-sort{
     height: 36px;
     padding: 8px 11px;
@@ -393,6 +399,62 @@ margin-bottom:25px;
 }
 .catalog-filter-popup{
     display:none;
+}
+
+#slider-range{
+    width: 94%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 10px;    
+}
+.catalog-filter-row-items-prices-inputs{
+    margin-bottom:30px;
+}
+.catalog-filter-row-items .ui-widget-header{
+    border: 2px solid #92A35F;
+    height:0;
+    top: -2px;
+}
+.catalog-filter-row-items .ui-widget-content{
+    border: 2px solid #E7E7E7;
+    height:0;
+}
+.catalog-filter-row-items .ui-slider-handle{
+    background: #FFFFFF;
+    border: 2px solid #92A35F;
+    width: 17px;
+    height: 17px;
+    border-radius:100%;
+}
+.catalog-filter-row-items .ui-slider-handle{
+    top: -8px;
+}
+
+.catalog-filter-row-items-prices-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-filter-row-items-prices-inputs input{
+    width: 48%;
+    height: 38px;
+    padding-left:10px;
+    padding-right:10px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+.catalog-filter-row-items-prices-inputs input::-webkit-outer-spin-button,
+.catalog-filter-row-items-prices-inputs input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 @media(max-width:768px){
