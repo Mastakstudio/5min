@@ -652,17 +652,23 @@ let openTgivenPopup = document.querySelector('.popup-tgiven-wrapp')
 let youOrderBtn = document.querySelector('.you-order-btn')
 
 function openGivenPopup(){
+    bgForPopup.style.display = 'block';
     openTgivenPopup.style.display = 'block';
     mainPopup.style.pointerEvents = 'none'
     document.body.style.overflow = 'hidden'
-    bgForPopup.style.display = 'block';
-
   
 }
 function closeGivenPopup(){
-    openTgivenPopup.style.display = 'none';
-    mainPopup.style.pointerEvents = 'none'
-    document.body.style.overflow = 'auto'
     bgForPopup.style.display = 'none';
+    openTgivenPopup.style.display = 'none';
+    mainPopup.style.pointerEvents = 'auto'
+    document.body.style.overflow = 'auto'
+  
 }
 
+$(document).mouseup(function (e) {
+    var container = $("body");
+    if (container.has(e.target).length === 1){
+        closeGivenPopup()
+    }
+});
