@@ -407,6 +407,7 @@ window.addEventListener("DOMContentLoaded", function() {
     $('.catalog-filter-row-item-title').click(function(){
         $(this).toggleClass('active');
         $(this).parents('.catalog-filter-row').find('.catalog-filter-row-items').slideToggle();
+        $(this).parents('.catalog-filter-row').find('.catalog-filter-row-search').slideToggle();
         if($(this).parents('.catalog-filter-row').find('.catalog-filter-row-items').hasClass('active')==false){
             $(this).parents('.catalog-filter-row').find('.catalog-filter-row-item-all').slideToggle();   
         }
@@ -598,7 +599,7 @@ window.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
+    
     var mh = 0;
     $(".way-blc-mid").each(function () {
         var h_block = parseInt($(this).height());
