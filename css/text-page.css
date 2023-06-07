@@ -5,7 +5,17 @@
 textarea{
     resize: none;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
 
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
 
 .centering{
     display: flex;
@@ -2286,7 +2296,6 @@ line-height: 13.92px;
         height: 68px;
         padding-left: 16px;
         font-size: 20px;
-        color: #737373;
         outline: none;
         margin-top: 23px;
         font-family: 'Circe';
@@ -2294,8 +2303,15 @@ line-height: 13.92px;
         font-weight: 800;
         font-size: 20px;
         line-height: 26px;
-        
         color: #B6B6B6;
+      
+    }
+    .your-comment-wrapp>form>input::placeholder{
+        color: #B6B6B6 !important;
+    }
+    .your-comment-wrapp>form>textarea::placeholder{
+        color: #B6B6B6 !important;
+
     }
     .your-comment-wrapp>form>textarea{
         display: block;
@@ -4221,6 +4237,9 @@ line-height: 154.7%;
     .exit-popup-close-order-form{
         display: block;
     }
+    .section-form-title{
+        max-width:350px
+    }
 }
 
 
@@ -4274,3 +4293,5 @@ line-height: 154.7%;
         margin: 20px 3px 0 13px;
      }
 }
+
+

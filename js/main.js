@@ -296,6 +296,7 @@ $(document).ready(function(){
         $(parent).find('.home-faq-text').slideToggle();
     });
 
+
     $('.header-menu-catalog').click(function(){
         $('.header-menu-catalog').toggleClass('active');
         $('.main').toggleClass('active');
