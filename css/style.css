@@ -1473,6 +1473,13 @@ transition: 0.5s;
 .product-couple-container{
     max-width:996px;
     width:100%;
+    left: -40px;
+    position: relative;
+}
+@media(max-width:768px){
+    .product-couple-container{
+        left:0;
+    }
 }
 
 
