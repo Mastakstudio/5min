@@ -4387,3 +4387,198 @@ line-height: 13px;
 .right-popup.cart .slider-arrows .slick-prev{
 
 }
+
+
+/* right-popup-buy */
+
+
+.right-popup-title-buy{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 165px;
+}
+.right-popup-desc-buy{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 31px;
+    margin-right: 28px;
+}
+.right-popup-log-buy{
+    width: 100%;
+    padding: 16px 0;
+    margin-right: 28px;
+    background: #353430;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    margin-top: 34px;
+    cursor: pointer;
+}
+
+.right-popup-log-buy:hover{
+    background: #92A35F;
+    color: white;
+    transition: 0.5s;
+}
+.right-popup-underdesc-buy{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.09em;
+    text-decoration-line: underline;
+    color: #828282;
+    margin-top: 21px;
+    text-align: center;
+    cursor: pointer;
+}
+.right-popup-buy-wrapp{
+    margin-left: 2px;
+}
+
+
+
+/* rigth-popup-enter */
+
+.right-popup-enter-wrapp{
+    margin-left: 2px;
+}
+.right-popup-title-enter{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 165px;
+}
+.right-popup-desc-enter{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 27px;
+    color: #000000;
+}
+.right-popup-log-enter:hover{
+    background: #92A35F;
+    color: white;
+    transition: 0.5s;
+}
+.right-popup-log-enter{
+    width: 100%;
+    padding: 16px 0;
+    margin-right: 28px;
+    background: #353430;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.rigth-popup-inp{
+    width: 100%;
+    margin-top: 39px;
+    margin-right: 28px;
+}
+.rigth-popup-inp>input{
+    width: 100%;
+    height: 49px;
+    padding-left: 14px;
+    background: #F0F0F0;
+    border: 1px solid #DFDFDF;
+    color:#7D7D7D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1704px;
+    line-height: 21px;
+    letter-spacing: 0.09em;
+    outline: none;
+}
+
+/* right-popup-agree */
+.right-popup-agree-wrapp{
+    margin-left: 2px;
+}
+.right-popup-title-agree{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 165px;
+}
+.right-popup-desc-agree{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 16px;
+}
+.right-popup-agree-tel{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 16px;
+}
+.right-popup-log-agree:hover{
+    background: #92A35F;
+    color: white;
+    transition: 0.5s;
+}
+.right-popup-log-agree{
+    width: 100%;
+    padding: 16px 0;
+    margin-right: 28px;
+    background: #353430;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    margin-top: 26px;
+    cursor: pointer;
+}
+.rigth-popup-agree-inp{
+    width: 100%;
+    margin-top: 32px;
+    margin-right: 28px;
+}
+.rigth-popup-agree-inp>input{
+    width: 100%;
+    height: 49px;
+    padding-left: 14px;
+    background: #F0F0F0;
+    border: 1px solid #DFDFDF;
+    color:#7D7D7D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1704px;
+    line-height: 21px;
+    letter-spacing: 0.09em;
+    outline: none;
+}

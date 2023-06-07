@@ -296,6 +296,7 @@ $(document).ready(function(){
         $(parent).find('.home-faq-text').slideToggle();
     });
 
+
     $('.header-menu-catalog').click(function(){
         $('.header-menu-catalog').toggleClass('active');
         $('.main').toggleClass('active');
@@ -666,4 +667,32 @@ function closeExitPopup(){
 }
 
 
+// popup order tgiven
+
+let openTgivenPopup = document.querySelector('.popup-tgiven-wrapp')
+let youOrderBtn = document.querySelector('.you-order-btn')
+
+function openGivenPopup(){
+    bgForPopup.style.display = 'block';
+    openTgivenPopup.style.display = 'block';
+    mainPopup.style.pointerEvents = 'none'
+    document.body.style.overflow = 'hidden'
+  
+}
+function closeGivenPopup(){
+    bgForPopup.style.display = 'none';
+    openTgivenPopup.style.display = 'none';
+    mainPopup.style.pointerEvents = 'auto'
+    document.body.style.overflow = 'auto'
+  
+}
+
+if(window.innerWidth>400){
+    $(document).mouseup(function (e) {
+        var container = $("body");
+        if (container.has(e.target).length === 1){
+            closeGivenPopup()
+        }
+    });
+}
 

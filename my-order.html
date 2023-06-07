@@ -19,6 +19,7 @@
 <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/catalog.css">
 <link rel="stylesheet" href="css/user-data.css">
 </head>
 <body>
@@ -733,7 +734,6 @@
         </div>
         <div class="header-shadow"></div>
     </header>
-
     <main class="main ">
         <div class="section-user-data container">
             <div class="user-data-title">Мои заказы</div>
@@ -771,7 +771,7 @@
         <div class="user-data-container container">
             <div class="user-data-links-wrapp user-order-link-stl">
                 <ul class="user-data-list">
-                    <li class="user-data-link ">Изменить пароль</li>
+                    <li class="user-data-link ">Личные данные</li>
                     <li class="user-data-link user-data-link-open">Мои заказы</li>
                     <li class="user-data-link ">Изменить пароль</li>
                     <li class="user-data-link">Мои отзывы</li>
@@ -780,87 +780,521 @@
                 </ul>
             </div>
             
-            <div class="section-my-order-wrapp">
-                <div class="my-order-data-container">
-                    <div class="number-order number-order-desktop">№2567</div>
-                    <div class="date-order date-order-desktop">Дата: 8 марта</div>
-                    <div class="time-order time-order-desktop">Время: 18:36</div>
-                    <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+            <div class="section-my-order-wrapp ">
+                <div class="br-item-faq">
+                    <div class="home-faq-item my-order-data-container ">
+                        <div class="order-data-container-flex">
+                            <div class="home-faq-title faq-for-order">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.9668" cy="13" r="12.4668" fill="#353430" fill-opacity="0.62"/>
+                                    <path d="M12.3136 18.5307V13.9967H7.85559C7.70361 13.9967 7.56852 13.9376 7.45032 13.8194C7.349 13.7012 7.29834 13.5577 7.29834 13.3888C7.29834 13.2368 7.349 13.1102 7.45032 13.0089C7.56852 12.8907 7.70361 12.8316 7.85559 12.8316H12.3136V8.34826C12.3136 8.19629 12.3642 8.06964 12.4655 7.96832C12.5837 7.85012 12.7188 7.79102 12.8708 7.79102H12.9975C13.1494 7.79102 13.2761 7.85012 13.3774 7.96832C13.4956 8.06964 13.5547 8.19629 13.5547 8.34826V12.8316H18.038C18.19 12.8316 18.3166 12.8907 18.4179 13.0089C18.5362 13.1271 18.5953 13.2706 18.5953 13.4395C18.5953 13.5914 18.5362 13.7265 18.4179 13.8447C18.3166 13.9461 18.19 13.9967 18.038 13.9967H13.5547V18.5307C13.5547 18.6827 13.4956 18.8177 13.3774 18.936C13.2761 19.0373 13.1494 19.0879 12.9975 19.0879H12.8708C12.7188 19.0879 12.5837 19.0373 12.4655 18.936C12.3642 18.8177 12.3136 18.6827 12.3136 18.5307Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="number-order number-order-desktop">№2567</div>
+                            <div class="date-order date-order-desktop">Дата: 8 марта</div>
+                            <div class="time-order time-order-desktop">Время: 18:36</div>
+                            <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+                            
+                            <div class="my-order-data-moblile">
+                                <div class="number-order number-order-mobile">№2567</div>
+                                <div class="date-order date-order-mobile">Дата: 8 марта</div>
+                            </div>
+                            <div class="my-order-data-moblile">
+                                <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
+                                <div class="time-order time-order-mobile">Время: 18:36</div>
+                            </div>
+                            <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                        </div>
+    
+                        <div class="home-faq-text show-adress-blc" style="display: none;" >
+                            <div class="my-order-items-container">
+                                <div class="order-item-border">
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
                     
-                    <div class="my-order-data-moblile">
-                        <div class="number-order number-order-mobile">№2567</div>
-                        <div class="date-order date-order-mobile">Дата: 8 марта</div>
-                    </div>
-                    <div class="my-order-data-moblile">
-                        <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
-                        <div class="time-order time-order-mobile">Время: 18:36</div>
-                    </div>
-
-
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
                     
-                    <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
-                </div>
-                <div class="my-order-items-container">
-                    <div class="order-item-container">
-                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
-                        <div class="order-item-wrapp">
-                           
-                            <div class="order-item-left">
-                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
-                                <div class="order-item-desc">
-                                    <div class="order-item-top-desc">УВЛАЖНЯЮЩИЙ КРЕМ</div>
-                                    <div class="order-item-bot-desc">DON’T TOUCH MY SKIN </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                                <div class="my-order-result-container">
+                                    <div class="order-result-top">
+                                        <span class="result">Итого:</span>
+                                        
+                                        <div class="result-order-pos" >
+                                            <span class="result-last-price">4.500₽</span>
+                                            <span class="result-new-price">3980₽</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="order-result-bot">
+                                        <span class="give-bonuse">Начисленные бонусы</span>
+                                        <span class="number-bonus-result">398шт</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="order-item-desc-wrapp">
-    
-                                <div class="order-item-price">
-                                    <span class="order-item-price-now">1.990₽</span>
-                                    <span class="order-item-price-last">2.250₽</span>
-                                </div>
-                            </div>
-    
                         </div>
                     </div>
-                    <div class="order-item-container">
-                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
-                        <div class="order-item-wrapp">
-                           
-                            <div class="order-item-left">
-                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
-                                <div class="order-item-desc">
-                                    <div class="order-item-top-desc">УВЛАЖНЯЮЩИЙ КРЕМ</div>
-                                    <div class="order-item-bot-desc">DON’T TOUCH MY SKIN </div>
+                </div>
+                <div class="br-item-faq">
+                    <div class="home-faq-item my-order-data-container ">
+                        <div class="order-data-container-flex">
+                            <div class="home-faq-title faq-for-adrees">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.9668" cy="13" r="12.4668" fill="#353430" fill-opacity="0.62"/>
+                                    <path d="M12.3136 18.5307V13.9967H7.85559C7.70361 13.9967 7.56852 13.9376 7.45032 13.8194C7.349 13.7012 7.29834 13.5577 7.29834 13.3888C7.29834 13.2368 7.349 13.1102 7.45032 13.0089C7.56852 12.8907 7.70361 12.8316 7.85559 12.8316H12.3136V8.34826C12.3136 8.19629 12.3642 8.06964 12.4655 7.96832C12.5837 7.85012 12.7188 7.79102 12.8708 7.79102H12.9975C13.1494 7.79102 13.2761 7.85012 13.3774 7.96832C13.4956 8.06964 13.5547 8.19629 13.5547 8.34826V12.8316H18.038C18.19 12.8316 18.3166 12.8907 18.4179 13.0089C18.5362 13.1271 18.5953 13.2706 18.5953 13.4395C18.5953 13.5914 18.5362 13.7265 18.4179 13.8447C18.3166 13.9461 18.19 13.9967 18.038 13.9967H13.5547V18.5307C13.5547 18.6827 13.4956 18.8177 13.3774 18.936C13.2761 19.0373 13.1494 19.0879 12.9975 19.0879H12.8708C12.7188 19.0879 12.5837 19.0373 12.4655 18.936C12.3642 18.8177 12.3136 18.6827 12.3136 18.5307Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="number-order number-order-desktop">№2567</div>
+                            <div class="date-order date-order-desktop">Дата: 8 марта</div>
+                            <div class="time-order time-order-desktop">Время: 18:36</div>
+                            <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+                            
+                            <div class="my-order-data-moblile">
+                                <div class="number-order number-order-mobile">№2567</div>
+                                <div class="date-order date-order-mobile">Дата: 8 марта</div>
+                            </div>
+                            <div class="my-order-data-moblile">
+                                <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
+                                <div class="time-order time-order-mobile">Время: 18:36</div>
+                            </div>
+                            <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                        </div>
+    
+                        <div class="home-faq-text show-adress-blc" style="display: none;" >
+                            <div class="my-order-items-container">
+                                <div class="order-item-border">
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                                <div class="my-order-result-container">
+                                    <div class="order-result-top">
+                                        <span class="result">Итого:</span>
+                                        
+                                        <div class="result-order-pos" >
+                                            <span class="result-last-price">4.500₽</span>
+                                            <span class="result-new-price">3980₽</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="order-result-bot">
+                                        <span class="give-bonuse">Начисленные бонусы</span>
+                                        <span class="number-bonus-result">398шт</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="order-item-desc-wrapp">
-    
-                                <div class="order-item-price">
-                                    <span class="order-item-price-now">1.990₽</span>
-                                    <span class="order-item-price-last">2.250₽</span>
-                                </div>
-                            </div>
-    
                         </div>
                     </div>
-                    <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
                 </div>
-                <div class="my-order-result-container">
-                    <div class="order-result-top">
-                        <span class="result">Итого:</span>
-                        <p>
-                            <span class="result-last-price">4.500₽</span>
-                            <span class="result-new-price">3980₽</span>
-                        </p>
+                <div class="br-item-faq">
+                    <div class="home-faq-item my-order-data-container ">
+                        <div class="order-data-container-flex">
+                            <div class="home-faq-title faq-for-adrees">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.9668" cy="13" r="12.4668" fill="#353430" fill-opacity="0.62"/>
+                                    <path d="M12.3136 18.5307V13.9967H7.85559C7.70361 13.9967 7.56852 13.9376 7.45032 13.8194C7.349 13.7012 7.29834 13.5577 7.29834 13.3888C7.29834 13.2368 7.349 13.1102 7.45032 13.0089C7.56852 12.8907 7.70361 12.8316 7.85559 12.8316H12.3136V8.34826C12.3136 8.19629 12.3642 8.06964 12.4655 7.96832C12.5837 7.85012 12.7188 7.79102 12.8708 7.79102H12.9975C13.1494 7.79102 13.2761 7.85012 13.3774 7.96832C13.4956 8.06964 13.5547 8.19629 13.5547 8.34826V12.8316H18.038C18.19 12.8316 18.3166 12.8907 18.4179 13.0089C18.5362 13.1271 18.5953 13.2706 18.5953 13.4395C18.5953 13.5914 18.5362 13.7265 18.4179 13.8447C18.3166 13.9461 18.19 13.9967 18.038 13.9967H13.5547V18.5307C13.5547 18.6827 13.4956 18.8177 13.3774 18.936C13.2761 19.0373 13.1494 19.0879 12.9975 19.0879H12.8708C12.7188 19.0879 12.5837 19.0373 12.4655 18.936C12.3642 18.8177 12.3136 18.6827 12.3136 18.5307Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="number-order number-order-desktop">№2567</div>
+                            <div class="date-order date-order-desktop">Дата: 8 марта</div>
+                            <div class="time-order time-order-desktop">Время: 18:36</div>
+                            <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+                            
+                            <div class="my-order-data-moblile">
+                                <div class="number-order number-order-mobile">№2567</div>
+                                <div class="date-order date-order-mobile">Дата: 8 марта</div>
+                            </div>
+                            <div class="my-order-data-moblile">
+                                <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
+                                <div class="time-order time-order-mobile">Время: 18:36</div>
+                            </div>
+                            <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                        </div>
+    
+                        <div class="home-faq-text show-adress-blc" style="display: none;" >
+                            <div class="my-order-items-container">
+                                <div class="order-item-border">
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                                <div class="my-order-result-container">
+                                    <div class="order-result-top">
+                                        <span class="result">Итого:</span>
+                                        
+                                        <div class="result-order-pos" >
+                                            <span class="result-last-price">4.500₽</span>
+                                            <span class="result-new-price">3980₽</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="order-result-bot">
+                                        <span class="give-bonuse">Начисленные бонусы</span>
+                                        <span class="number-bonus-result">398шт</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order-result-bot">
-                        <span class="give-bonuse">Начисленные бонусы</span>
-                        <span class="number-bonus-result">398шт</span>
+                </div>
+                <div class="br-item-faq">
+                    <div class="home-faq-item my-order-data-container ">
+                        <div class="order-data-container-flex">
+                            <div class="home-faq-title faq-for-adrees">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.9668" cy="13" r="12.4668" fill="#353430" fill-opacity="0.62"/>
+                                    <path d="M12.3136 18.5307V13.9967H7.85559C7.70361 13.9967 7.56852 13.9376 7.45032 13.8194C7.349 13.7012 7.29834 13.5577 7.29834 13.3888C7.29834 13.2368 7.349 13.1102 7.45032 13.0089C7.56852 12.8907 7.70361 12.8316 7.85559 12.8316H12.3136V8.34826C12.3136 8.19629 12.3642 8.06964 12.4655 7.96832C12.5837 7.85012 12.7188 7.79102 12.8708 7.79102H12.9975C13.1494 7.79102 13.2761 7.85012 13.3774 7.96832C13.4956 8.06964 13.5547 8.19629 13.5547 8.34826V12.8316H18.038C18.19 12.8316 18.3166 12.8907 18.4179 13.0089C18.5362 13.1271 18.5953 13.2706 18.5953 13.4395C18.5953 13.5914 18.5362 13.7265 18.4179 13.8447C18.3166 13.9461 18.19 13.9967 18.038 13.9967H13.5547V18.5307C13.5547 18.6827 13.4956 18.8177 13.3774 18.936C13.2761 19.0373 13.1494 19.0879 12.9975 19.0879H12.8708C12.7188 19.0879 12.5837 19.0373 12.4655 18.936C12.3642 18.8177 12.3136 18.6827 12.3136 18.5307Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="number-order number-order-desktop">№2567</div>
+                            <div class="date-order date-order-desktop">Дата: 8 марта</div>
+                            <div class="time-order time-order-desktop">Время: 18:36</div>
+                            <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+                            
+                            <div class="my-order-data-moblile">
+                                <div class="number-order number-order-mobile">№2567</div>
+                                <div class="date-order date-order-mobile">Дата: 8 марта</div>
+                            </div>
+                            <div class="my-order-data-moblile">
+                                <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
+                                <div class="time-order time-order-mobile">Время: 18:36</div>
+                            </div>
+                            <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                        </div>
+    
+                        <div class="home-faq-text show-adress-blc" style="display: none;" >
+                            <div class="my-order-items-container">
+                                <div class="order-item-border">
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                                <div class="my-order-result-container">
+                                    <div class="order-result-top">
+                                        <span class="result">Итого:</span>
+                                        
+                                        <div class="result-order-pos" >
+                                            <span class="result-last-price">4.500₽</span>
+                                            <span class="result-new-price">3980₽</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="order-result-bot">
+                                        <span class="give-bonuse">Начисленные бонусы</span>
+                                        <span class="number-bonus-result">398шт</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="br-item-faq">
+                    <div class="home-faq-item my-order-data-container ">
+                        <div class="order-data-container-flex">
+                            <div class="home-faq-title faq-for-adrees">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12.9668" cy="13" r="12.4668" fill="#353430" fill-opacity="0.62"/>
+                                    <path d="M12.3136 18.5307V13.9967H7.85559C7.70361 13.9967 7.56852 13.9376 7.45032 13.8194C7.349 13.7012 7.29834 13.5577 7.29834 13.3888C7.29834 13.2368 7.349 13.1102 7.45032 13.0089C7.56852 12.8907 7.70361 12.8316 7.85559 12.8316H12.3136V8.34826C12.3136 8.19629 12.3642 8.06964 12.4655 7.96832C12.5837 7.85012 12.7188 7.79102 12.8708 7.79102H12.9975C13.1494 7.79102 13.2761 7.85012 13.3774 7.96832C13.4956 8.06964 13.5547 8.19629 13.5547 8.34826V12.8316H18.038C18.19 12.8316 18.3166 12.8907 18.4179 13.0089C18.5362 13.1271 18.5953 13.2706 18.5953 13.4395C18.5953 13.5914 18.5362 13.7265 18.4179 13.8447C18.3166 13.9461 18.19 13.9967 18.038 13.9967H13.5547V18.5307C13.5547 18.6827 13.4956 18.8177 13.3774 18.936C13.2761 19.0373 13.1494 19.0879 12.9975 19.0879H12.8708C12.7188 19.0879 12.5837 19.0373 12.4655 18.936C12.3642 18.8177 12.3136 18.6827 12.3136 18.5307Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="number-order number-order-desktop">№2567</div>
+                            <div class="date-order date-order-desktop">Дата: 8 марта</div>
+                            <div class="time-order time-order-desktop">Время: 18:36</div>
+                            <div class="status-order status-order-desktop">Статус: <span class="status-order-stl">В разработке</span></div>
+                            
+                            <div class="my-order-data-moblile">
+                                <div class="number-order number-order-mobile">№2567</div>
+                                <div class="date-order date-order-mobile">Дата: 8 марта</div>
+                            </div>
+                            <div class="my-order-data-moblile">
+                                <div class="status-order status-order-mobile">Статус: <span class="status-order-stl">В разработке</span></div>
+                                <div class="time-order time-order-mobile">Время: 18:36</div>
+                            </div>
+                            <div  class="info-order info-order-desktop"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                        </div>
+    
+                        <div class="home-faq-text show-adress-blc" style="display: none;" >
+                            <div class="my-order-items-container">
+                                <div class="order-item-border">
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="order-item-container">
+                                        <div class="order-item-img order-item-img-mobile"><img src="./img/jar-15 100.png" alt=""></div>
+                                        <div class="order-item-wrapp">
+                                        
+                                            <div class="order-item-left">
+                                                <div class="order-item-img order-item-img-desktop"><img src="./img/jar-15 100.png" alt=""></div>
+                                                <div class="order-item-desc">
+                                                    <div class="order-item-top-desc">Don't touch my skin because it's too soft for you</div>
+                                                    <div class="order-item-bot-desc">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-desc-wrapp">
+                    
+                                                <div class="order-item-price">
+                                                    <span class="order-item-price-now">1.990₽</span>
+                                                    <span class="order-item-price-last">2.250₽</span>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div  class="info-order info-order-mobile"><span onclick="openPopup()" class="openPopup">Информация о заказе</span></div>
+                                <div class="my-order-result-container">
+                                    <div class="order-result-top">
+                                        <span class="result">Итого:</span>
+                                        
+                                        <div class="result-order-pos" >
+                                            <span class="result-last-price">4.500₽</span>
+                                            <span class="result-new-price">3980₽</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="order-result-bot">
+                                        <span class="give-bonuse">Начисленные бонусы</span>
+                                        <span class="number-bonus-result">398шт</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-bottom catalog-bottom-for-order">
+                    <div class="catalog-bottom-left">
+                        
+                        <ul class="catalog-bottom-pagination">
+                            <li>
+                                <div class="catalog-bottom-arrow-left">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.42857 9L1 5L4.42857 1" stroke="#353430" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>    
+                                </div>
+                            </li>
+                            <li>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <div class="catalog-bottom-arrow-right">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.42885 1L4.85742 5L1.42885 9" stroke="#353430" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>                                    
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <a href="" class="catalog-bottom-next">
+                            Следующая
+                            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00014 1.5L4.42871 5.5L1.00014 9.5" stroke="#F09661" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>   
+                        </a>
+                        <div class="catalog-bottom-view">
+                            Показать еще
+                        </div>
+                    </div>
+                    <div class="catalog-bottom-right">
+                        <div class="catalog-top-view">
+                            <span>
+                                Показывать по
+                            </span>
+                            <input type="number" value="9">
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
-        
+ 
+
         <div class="container">
             <footer>
                 <div class="footer-left">
