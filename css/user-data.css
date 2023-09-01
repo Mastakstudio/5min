@@ -116,7 +116,7 @@ input[type="number"]:focus {
     /* margin-top: 48px; */
     display: flex;
     flex-wrap: wrap;
-    
+    position: relative;
 }
 .user-data-input-container{
     margin-bottom: 26px;
@@ -204,6 +204,17 @@ input[type="number"]:focus {
 }
 .user-data-input-container-bot-street>input{
     width: 304px;
+}
+.user-date-a-hidden{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #C5C5C5;
+    top: -30px;
+    padding: 5px 10px;
+}
+.user-date-alert:hover .user-date-a-hidden{
+    display: block;
 }
 .user-data-btn{
     width: 201px;
@@ -1305,6 +1316,9 @@ input[type="number"]:focus {
     .order-review-raiting-wrapp{
         margin-right: 0;
     }
+    .my-order-items-container{
+        padding-left: 0;
+    }
 }
 @media(max-width:1120px){
     .user-form-date-top, .user-form-date-mid{
@@ -1434,6 +1448,7 @@ input[type="number"]:focus {
     .user-data-input-container-adress>input{
         margin-right: 0;
     }
+
 }
 @media(max-width:700px){
 
@@ -1762,9 +1777,9 @@ input[type="number"]:focus {
         border-top: none;
         border-bottom: 0;
         position: relative;
-        
+        margin-bottom: 17px !important;
     }
-    .my-order-data-container::after{
+    /* .my-order-data-container::after{
         content: '';
         width: 110%;
         height: 1px;
@@ -1773,9 +1788,17 @@ input[type="number"]:focus {
         position: absolute;
         background-color: #D9D9D9;
         overflow: hidden;
-    }
+    } */
     .my-order-data-moblile{
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .faq-for-order{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .order-item-img-mobile{
         display: block;
@@ -1794,7 +1817,7 @@ input[type="number"]:focus {
         height: 101.89px;
     }
     .order-item-img>img{
-        width: 100%;
+        width: auto;
         height: 100%;
     }
     .order-item-top-desc{
@@ -1803,10 +1826,11 @@ input[type="number"]:focus {
         margin-top: 2px;
     }
     .order-item-bot-desc{
-        font-size: 16.4684px;
+        font-size: 14.4684px;
         line-height: 21px;
         max-width: 150px;
         margin-top: 10px;
+        font-weight: 800;
     }
     .order-item-price-now{
         font-size: 23.6522px;
@@ -2060,7 +2084,7 @@ input[type="number"]:focus {
     }
     .order-item-desc-wrapp{
         margin-top: 0;
-        margin-left: 25px;
+        margin-left: 45px;
     }
     .number-order-mobile, .date-order-mobile, .time-order-mobile, .status-order-mobile {
         display: block;
@@ -2085,6 +2109,7 @@ input[type="number"]:focus {
     }
     .my-order-items-container{
         border-bottom: 0;
+        padding-left: 0;
     }
     .order-result-bot{
         margin-top: 17px;
@@ -2199,11 +2224,18 @@ input[type="number"]:focus {
         font-size: 14px;
         line-height: 18px;
     }
+
 }  
 
 @media(max-width:370px){
     .my-order-popup{
         width:90%
+    }
+    .order-data-container-flex{
+        display: block;
+    }
+    .my-order-data-moblile{
+        flex-direction: row;
     }
 }
 

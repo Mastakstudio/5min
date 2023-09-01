@@ -754,6 +754,26 @@
                 </div>
                 <div class="present-back-wrapp">
                     <div class="container container-ad-pad">
+                        <!-- <div class="form_toggle">
+                            <div class="form_toggle-item item-1">
+                                <input id="fid-1" type="radio" name="radio" value="off" checked>
+                                <label for="fid-1">Электронный сертификат</label>
+                            </div>
+                            <div class="form_toggle-item item-2">
+                                <input id="fid-2" type="radio" name="radio" value="on">
+                                <label for="fid-2">Физическая карта</label>
+                            </div>
+                        </div> -->
+                        <div class="r-all">
+                            <span class="r-group f-input">
+                                <input class="r-input " type="radio" name="radioname" id="radio-1" checked />
+                                <label class="" for="radio-1">Электронный сертификат</label>
+                            </span>
+                            <span class="r-group s-input">
+                                <input class="r-input s-input" type="radio" name="radioname" id="radio-2" />
+                                <label for="radio-2">Физическая карта</label>
+                            </span>           
+                        </div>
                         <div class="choise-type-present">
                             <div class="choise-type-wrapp">
                                 <div class="choise-type-number-blc"><p>1</p></div>
@@ -920,6 +940,21 @@
                     </footer>
                 </div>
     </main>
+    <script>
+        let all = document.querySelectorAll('.r-all');
+for (let a = 0; a < all.length; a++){ 
+    let radios = all[a].querySelectorAll('.r-input');
+    let i = 1;
+    all[a].style.setProperty('--options',radios.length);
+    radios.forEach((input)=>{
+        input.setAttribute('data-pos',i);
+        input.addEventListener('click',(e)=>{
+            all[a].style.setProperty('--options-active',e.target.getAttribute('data-pos'));
+        });
+        i++;
+    });
+};
+    </script>
     <script src="./js/main.js"></script> 
 </body>
 </html> 

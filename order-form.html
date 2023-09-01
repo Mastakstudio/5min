@@ -956,7 +956,7 @@
                     <div class="form-order-radui-wrapp">
                         <div class="form-order-radui-input">
                             <input type="radio" id="Choice1"
-                            name="choisePay" value="Картой онлайн">
+                            name="choisePay" value="Картой онлайн" checked>
                            <label for="Choice1">Картой онлайн</label>
                         </div>
                         <div class="form-order-radui-input">
@@ -1040,7 +1040,8 @@
                                 <div class="end-order-right">5882₽</div>
                             </div>
                             <div class="bonus-order">
-                                <div class="bonus-order-left">Начисленные бонусы</div>
+                                <div  class="bonus-order-left">Начисленные бонусы</div>
+                                <div></div>
                                 <div class="bonus-right">532шт</div>
                             </div>
                         </div>
@@ -1136,12 +1137,22 @@
         <div onclick="closeGivenPopup()" class="exit-popup-close exit-popup-close-order-form"></div>
         <div class="tgiven-img"><img src="./img/Mask group-given.png" alt=""></div>
         <div class="tgiven-txt">Ура! Мы получили Ваш заказ!</div>
-        <div class="tgiven-desc">В течении 24 Часов на Ваш email придет трек номер с помощью которого вы сможете отслеживать Ваш заказ</div>
+        <div class="tgiven-desc">В течение 24 Часов на Ваш email придет трек номер с помощью которого вы сможете отслеживать Ваш заказ</div>
     </div>
     <div class="bg-popup"></div>
 
+    <!-- for popup -->
+    <script>
+        if(window.innerWidth>400){
+    $(document).mouseup(function (e) {
+        var container = $("body");
+        if (container.has(e.target).length === 1){
+            closeGivenPopup()
+        }
+    });
+}
 
-
+    </script>
     <script src="./js/main.js"></script> 
 </body>
 </html>

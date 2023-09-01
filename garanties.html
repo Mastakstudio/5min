@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="header-button-profile">
-                    <svg class="header-button-profile-man" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg onclick="openPopapEnter()" class="header-button-profile-man" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.481 6.95517C26.5569 8.83793 27.1844 11.0793 27.1844 13.5C27.1844 20.6724 21.3569 26.5 14.1844 26.5C7.01203 26.5 1.18445 20.6724 1.18445 13.5C1.18445 6.32759 7.01203 0.5 14.1844 0.5C17.412 0.5 20.3707 1.66552 22.612 3.63793" stroke="black" stroke-miterlimit="10" stroke-linecap="round"/>
                     <path d="M6.29492 23.6309C6.29492 19.3274 9.79147 15.7412 14.1846 15.7412C18.5777 15.7412 22.0742 19.2378 22.0742 23.6309" stroke="black" stroke-miterlimit="10"/>
                     <path d="M14.1848 14.0383C16.4625 14.0383 18.3089 12.1919 18.3089 9.91418C18.3089 7.63648 16.4625 5.79004 14.1848 5.79004C11.9071 5.79004 10.0607 7.63648 10.0607 9.91418C10.0607 12.1919 11.9071 14.0383 14.1848 14.0383Z" stroke="black" stroke-miterlimit="10"/>
@@ -768,7 +768,8 @@
                         <form class="form-garanties" action="">
                             <div class="form-input-wrapp">
                                 <input type="name" placeholder="Введите ваше имя">
-                                <input type="email" placeholder="Введите ваш e-mail">
+                                <input class="tel"  placeholder="+7 (999) 999 9999">
+                                <input class="text"  placeholder="Документ на какой товар Вы хотите получить?">
                             </div>
                             <div class="home-bottom-form-check check-for-gar">
                                 <div class="home-bottom-form-checkbox home-bottom-form-checkbox-for-m">
@@ -921,6 +922,54 @@
                 </footer>
             </div>
     </main>
+
+<!-- попап авторизации -->
+    <div class="auth-popap-wrapp popup-auth-blc">
+        <div onclick="closeEn()" class="exit-popup-close close-enter"></div>
+        <div class="auth-popap-img">
+            <img src="./img/premium-icon-user-2102647 2.png" alt="">
+        </div>
+        <div class="auth-popup-swith-reg">
+           <p onclick="showAuth()"  class="auth-popap-in active-p"> Вход</p>
+           <p class="sp-bet-txt">/</p>
+            <p onclick="showReg()" class="auth-popap-reg">РЕГИСТРАЦИЯ</p>
+        </div>
+        <div class="auth-popap-form">
+            <input class="tel" placeholder="Номер телефона">
+            <input type="text" placeholder="Пароль">
+        </div>
+        <div class="auth-popup-btn-wrapp">
+            <button class="auth-popap-btn btn-hv">Войти</button>
+        </div>
+      
+        <div class="auth-popup-forget">Забыли пароль?</div>
+    </div>
+<!-- попап авторизации -->    
+<!-- попап регистрации -->
+    <div class="auth-popap-wrapp popup-reg-blc">
+        <div onclick="closeEn()" class="exit-popup-close close-enter"></div>
+        <div class="auth-popap-img">
+            <img src="./img/premium-icon-user-2102647 2.png" alt="">
+        </div>
+        <div class="auth-popup-swith-reg">
+           <p onclick="showAuth()" class="auth-popap-in"> Вход</p>
+           <p class="sp-bet-txt">/</p>
+            <p onclick="showReg()" class="auth-popap-reg active-p">РЕГИСТРАЦИЯ</p>
+        </div>
+        <div class="auth-popap-form">
+            <input type="text" placeholder="Ваше имя">
+            <input  class="tel" placeholder="+7(900)000-00-00">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Пароль">
+            <input type="password" placeholder="Повторите пароль">
+        </div>
+        <div class="auth-popup-btn-wrapp">
+            <button class="auth-popap-btn btn-hv">Зарегистрироваться</button>
+        </div>
+      
+        <div class="auth-popup-forget">У меня уже есть аккаунт</div>
+    </div>
+<!-- попап регистрации -->
     <script src="./js/main.js"></script> 
 </body>
 </html>
