@@ -9,6 +9,10 @@
 li{
     list-style: none;
 }
+ol, ul, dl{
+    margin-bottom:0;
+    padding-left:0;
+}
 a{
     text-decoration: none;
     transition: 0.5s;
@@ -3743,7 +3747,7 @@ color: #000000;
     display: flex;
     margin-bottom:17px;
 }
-.bradcrumbs span{
+.bradcrumbs > a{
     font-weight: 400;
     font-size: 15.3583px;
     line-height: 20px;
@@ -3751,13 +3755,34 @@ color: #000000;
     display: flex;
     color: #949494;
 }
-.bradcrumbs span::after{
+.bradcrumbs > a > span{
+    font-weight: 400;
+    font-size: 15.3583px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    display: flex;
+    color: #949494;
+    transition: 0.5s;
+}
+.bradcrumbs > a:hover > span{
+    color: #92A35F;
+    transition: 0.5s;
+}
+.bradcrumbs > a::after{
     content:'/';
     display: block;
     margin-left:6px;
     margin-right:6px;
 }
-.bradcrumbs a{
+.bradcrumbs span{
+    font-weight: 400;
+    font-size: 15.3583px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    
+    color: #000000;
+}
+.bradcrumbs span > span{
     font-weight: 400;
     font-size: 15.3583px;
     line-height: 20px;
