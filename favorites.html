@@ -19,7 +19,8 @@
 <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/text-page.css">
+<link rel="stylesheet" href="css/user-data.css">
+<link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
     <div class="mob-bottom-menu">
@@ -734,83 +735,375 @@
         <div class="header-shadow"></div>
     </header>
 
-    <main class="main c-m">
-        <div  class="container container-ad-pad">
-            <div class="section-top-order">
-                <div class="section-top-img">
-                    <img src="./img/Rectangle 135.png" alt="">
-                </div>
-                <div class="section-ord-ways section-ord-ways-delivery">
-                    <div class="title-stl">
-                        Доступные способы доставки:
-                    </div>
-                    <p class="choise-way">
-                        Введите свой город и выберите его из списка,<br>
-                        чтобы узнать точные условия доставки и оплаты
-                    </p>
-                    <div class="country-select-wrapp-or">
-                            <select class="select" name="language">
-                                <option disabled>Выберите Ваш город</option>
-                                <option value="value1" selected>Минск</option>
-                                <option value="value2" >Могилев</option>
-                                <option value="value3">Гомель</option>
-                                <option value="value3">Брест</option>
-                                <option value="value3">Гродно</option>
-                                <option value="value3">Витебск</option>
-                            </select>
-                          <button class="find-country btn-hv">Найти</button>
-                    </div>
-                    
-                </div>
-            </div>
-
+    <main class="main ">
+        <div class="section-user-data container">
+            <div class="user-data-title">Избранные товары</div>
         </div>
-        <div class="order-del-wrapp-back ">
-            <div class="container-od-wrapp">
-                <div class="section-del-pay">
-                    <div class="del-blc-back-ad">
-                        <div class="container-del-pay container-ad-pad">
-                            <div class="deliver-blc">
-                                <div class="deliver-blc-wrapp">
-                                    <div class="title-stl title-stl-ad-or">
-                                        Доставка:
-                                    </div>
-                                    <div class="del-pay-img-row">
-                                        <img src="./img/cdek 3.png" alt="">
-                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
-                                        <img src="./img/new-cart-i-pochta 3.png" alt="">
-                                    </div>
-                                    <div class="del-pay-txt">
-                                        Интернет магазин "5 минут и выхожу" доставляет по всей Росси и странам СНГ. Мы сотрудничаем с крупнейшими и надежными транспортными компаниями, доставляем Ваши заказы курьерами и в пункты самовывоза.
+        <div class="user-data-links-wrapp-ad ">
+           <div>
+                <ul class="user-data-list">
+                    <li class="user-data-link  ">Личные данные</li>
+                    <li class="user-data-link">Мои заказы</li>
+                    <li class="user-data-link user-data-link-open-ad">Изменить пароль</li>
+                    <li class="user-data-link">Мои отзывы</li>
+                    <li class="user-data-link">Избранные товары</li>
+                </ul>
+           </div>
+            
+           <div class="user-title-wrapp-ad">
+                <div class="user-data-title-ad">Избранные товары</div>
+                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
+                    <img src="./img/Mask group exit.png" alt="">
+                    <div class="user-exit-link-img">
+                        <span>Выход</span>
+                    </div>
+                </div>
+           </div>
+            <div class="user-data-level-bonus">
                 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pay-blc-back-ad">
-                        <div class="container-del-pay container-ad-pad">
-                            <div class="pay-blc">
-                                <div class="pay-blc-wrapp">
-                                    <div class="title-stl title-stl-ad-or">
-                                        Оплата:
-                                    </div>
-                                    <div class="del-pay-img-row">
-                                        <img src="./img/cdek 3.png" alt="">
-                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
-                                        <img src="./img/new-cart-i-pochta 3.png" alt="">
-                                    </div>
-                                    <div class="del-pay-txt">
-                                        Оплатить можно как на сайте при оформлени заказа, так и при получении заказа, наличными или картой. Заказ можно оплатить картой любого банка.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="user-level-bonus-top">
+                    Ваш уровень возврата бонусов - <span class="user-level-bonus-top-sp">7%</span>
+                </div>
+                <div class="user-level-bonus-bot">
+                    Сделайте заказ еще на 3000 р и получайте 10% бонусами!
                 </div>
             </div>
         </div>
+        <div class="user-data-container container">
+            <div class="user-data-links-wrapp">
+                <div class="user-data-links-title">
+                    личный кабинет
+                </div>
+                <ul class="user-data-list">
+                    <li class="user-data-link ">Личные данные</li>
+                    <li class="user-data-link ">Мои заказы</li>
+                    <li class="user-data-link user-data-link-open">Изменить пароль</li>
+                    <li class="user-data-link">Избранные товары</li>
+                    <li onclick="openExitPopup()" class="user-data-link">Выход</li>
+                </ul>
+            </div>
+            
+            <div class="user-data-favorites-wrapp">
+                <div class="catalog-cont-favorites">
+                    <!-- <div class="catalog-top">
+                        <div class="catalog-top-view">
+                            <span>
+                                Показывать по
+                            </span>
+                            <input type="number" value="9">
+                        </div>
+                        <select name="" id="" class="catalog-top-sort">
+                            <option value="">По популярности</option>
+                            <option value="">По цене</option>
+                            <option value="">По новизне</option>
+                        </select>
+                    </div> -->
+                    <div class="catalog-products">
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock-block-product">
+                            <div class="stock-block-product-img">
+                                <div class="stock-block-product-img-slider">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                    <img src="./img/product1.png" alt="" class="stock-block-product-slide">
+                                </div>
+                                <div class="stock-block-product-img-labels">
+                                    <div class="stock-block-product-img-label new">new</div>
+                                    <div class="stock-block-product-img-label hit">ХИТ</div>
+                                </div>
+                                <img src="./img/view.svg" alt="" class="stock-block-product-img-view">
+                                <img src="./img/pod.svg" alt="" class="stock-block-product-img-pod">
+                            </div>
+                            <div class="stock-block-product-desc">
+                                <div class="stock-block-product-desc-subtitle">
+                                    Don't touch my skin because it's too soft for you
+                                </div>
+                                <div class="stock-block-product-desc-title">
+                                    УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ЛИЦА И ТЕЛА МЯГКАЯ
+                                </div>
+                                <div class="stock-block-product-prices">
+                                    <div class="stock-block-product-price-sale">
+                                        1.990₽
+                                    </div>
+                                    <div class="stock-block-product-price">
+                                        2.250₽
+                                    </div>
+                                </div>
+                                <div class="stock-block-product-desc-buttons">
+                                    <div class="stock-block-product-button-cart">
+                                        В корзину
+                                    </div>
+                                    <div class="stock-block-product-vish active">
+                                        <svg width="27" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2658 1.02668C16.6658 0.726676 13.5658 3.02668 12.9658 4.42668C12.1658 3.12668 9.16579 0.726676 6.56579 1.02668C2.96579 1.42668 0.565788 4.62668 1.06579 8.22668C1.26579 9.52668 1.86579 10.6267 2.66579 11.7267C3.66579 13.0267 4.86579 14.1267 6.16579 15.2267C8.06579 16.7267 12.5658 20.3267 12.9658 20.6267C13.3658 20.3267 17.8658 16.7267 19.7658 15.2267C21.0658 14.2267 22.2658 13.0267 23.2658 11.7267C24.0658 10.7267 24.6658 9.52668 24.8658 8.22668C25.2658 4.62668 22.8658 1.42668 19.2658 1.02668Z" stroke="#353430" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-bottom">
+                        <div class="catalog-bottom-left">
+                            
+                            <ul class="catalog-bottom-pagination">
+                                <li>
+                                    <div class="catalog-bottom-arrow-left">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.42857 9L1 5L4.42857 1" stroke="#353430" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>1</span>
+                                </li>
+                                <li>
+                                    <a href="">2</a>
+                                </li>
+                                <li>
+                                    <a href="">3</a>
+                                </li>
+                                <li>
+                                    <div class="catalog-bottom-arrow-right">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.42885 1L4.85742 5L1.42885 9" stroke="#353430" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <a href="" class="catalog-bottom-next">
+                                Следующая
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.00014 1.5L4.42871 5.5L1.00014 9.5" stroke="#F09661" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>   
+                            </a>
+                            <div class="catalog-bottom-view">
+                                Показать еще
+                            </div>
+                        </div>
+                        <div class="catalog-bottom-right">
+                            <div class="catalog-top-view">
+                                <span>
+                                    Показывать по
+                                </span>
+                                <input type="number" value="9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <footer>
                 <div class="footer-left">
@@ -890,7 +1183,15 @@
                 </div>
             </footer>
         </div>
+        
     </main>
+    <div class="exit-popup-wrapp">
+        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
+        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
+        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
+        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
+    </div>
+    <div class="bg-popup"></div>
     <script src="./js/main.js"></script> 
 </body>
 </html>

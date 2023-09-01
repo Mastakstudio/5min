@@ -272,11 +272,11 @@
     align-items: center;
     cursor: pointer;
     background: #353430;
-    width:324px;
-    height:74px;
+    width: 237px;
+    height: 54px;
     font-weight: 800;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 0.09em;
     margin-right:5px;
     color: #FFFFFF;
@@ -287,8 +287,8 @@
     transition: 0.5s;
 }
 .product-top-right-buttons .stock-block-product-vish{
-    width:74px;
-    height:74px;
+    width: 54px;
+    height: 54px;
 }
 
 .quick-content-right-auth{
@@ -296,6 +296,7 @@
 }
 
 .product-advantages{
+    padding-top:35px;
     padding-left:92px;
     display: flex;
 }
@@ -463,6 +464,22 @@ cursor: pointer;
 }
 .product-mob-tabs{
     display: none;
+}
+
+.product-tabs-tab-desc-text-info{
+    display: flex;
+    padding-top:30px;
+    padding-bottom:30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product-tabs-tab-desc-text-info .quick-content-info-slide{
+    cursor: pointer;
+    margin-right:30px;
+}
+.product-tabs-tab-desc-text-info .quick-content-info-slide svg{
+    width:45px;
+    height:45px;
 }
 @media(max-width:1024px){
     .product-top{

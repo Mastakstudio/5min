@@ -13,13 +13,15 @@
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"> </script>
     <script src="/jquery-m/jquery.mobile.custom.min.js"> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    
 
 
 <link rel="stylesheet" href="fonts_new/stylesheet.css">
 <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/text-page.css">
+<link rel="stylesheet" href="css/user-data.css">
 </head>
 <body>
     <div class="mob-bottom-menu">
@@ -734,83 +736,133 @@
         <div class="header-shadow"></div>
     </header>
 
-    <main class="main c-m">
-        <div  class="container container-ad-pad">
-            <div class="section-top-order">
-                <div class="section-top-img">
-                    <img src="./img/Rectangle 135.png" alt="">
-                </div>
-                <div class="section-ord-ways section-ord-ways-delivery">
-                    <div class="title-stl">
-                        Доступные способы доставки:
-                    </div>
-                    <p class="choise-way">
-                        Введите свой город и выберите его из списка,<br>
-                        чтобы узнать точные условия доставки и оплаты
-                    </p>
-                    <div class="country-select-wrapp-or">
-                            <select class="select" name="language">
-                                <option disabled>Выберите Ваш город</option>
-                                <option value="value1" selected>Минск</option>
-                                <option value="value2" >Могилев</option>
-                                <option value="value3">Гомель</option>
-                                <option value="value3">Брест</option>
-                                <option value="value3">Гродно</option>
-                                <option value="value3">Витебск</option>
-                            </select>
-                          <button class="find-country btn-hv">Найти</button>
-                    </div>
-                    
-                </div>
-            </div>
-
+    <main class="main ">
+        <div class="section-user-data container">
+            <div class="user-data-title">Мои отзывы</div>
         </div>
-        <div class="order-del-wrapp-back ">
-            <div class="container-od-wrapp">
-                <div class="section-del-pay">
-                    <div class="del-blc-back-ad">
-                        <div class="container-del-pay container-ad-pad">
-                            <div class="deliver-blc">
-                                <div class="deliver-blc-wrapp">
-                                    <div class="title-stl title-stl-ad-or">
-                                        Доставка:
-                                    </div>
-                                    <div class="del-pay-img-row">
-                                        <img src="./img/cdek 3.png" alt="">
-                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
-                                        <img src="./img/new-cart-i-pochta 3.png" alt="">
-                                    </div>
-                                    <div class="del-pay-txt">
-                                        Интернет магазин "5 минут и выхожу" доставляет по всей Росси и странам СНГ. Мы сотрудничаем с крупнейшими и надежными транспортными компаниями, доставляем Ваши заказы курьерами и в пункты самовывоза.
+        <div class="user-data-links-wrapp-ad ">
+           <div>
+                <ul class="user-data-list">
+                    <li class="user-data-link">Личные данные</li>
+                    <li class="user-data-link">Мои заказы</li>
+                    <li class="user-data-link ">Изменить пароль</li>
+                    <li class="user-data-link user-data-link-open-ad">Мои отзывы</li>
+                    <li class="user-data-link">Избранные товары</li>
+                </ul>
+           </div>
+            
+           <div class="user-title-wrapp-ad">
+                <div class="user-data-title-ad">Мои отзывы</div>
+                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
+                    <img src="./img/Mask group exit.png" alt="">
+                    <div class="user-exit-link-img">
+                        <span>Выход</span>
+                    </div>
+                </div>
+           </div>
+            <div class="user-data-level-bonus">
                 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pay-blc-back-ad">
-                        <div class="container-del-pay container-ad-pad">
-                            <div class="pay-blc">
-                                <div class="pay-blc-wrapp">
-                                    <div class="title-stl title-stl-ad-or">
-                                        Оплата:
-                                    </div>
-                                    <div class="del-pay-img-row">
-                                        <img src="./img/cdek 3.png" alt="">
-                                        <img src="./img/new-cart-i-boxberry 3.png" alt="">
-                                        <img src="./img/new-cart-i-pochta 3.png" alt="">
-                                    </div>
-                                    <div class="del-pay-txt">
-                                        Оплатить можно как на сайте при оформлени заказа, так и при получении заказа, наличными или картой. Заказ можно оплатить картой любого банка.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="user-level-bonus-top">
+                    Ваш уровень возврата бонусов - <span class="user-level-bonus-top-sp">7%</span>
+                </div>
+                <div class="user-level-bonus-bot">
+                    Сделайте заказ еще на 3000 р и получайте 10% бонусами!
                 </div>
             </div>
         </div>
+        <div class="user-data-container container">
+            <div class="user-data-links-wrapp user-order-link-stl-review">
+                <ul class="user-data-list">
+                    <li class="user-data-link ">Личные данные</li>
+                    <li class="user-data-link ">Мои заказы</li>
+                    <li class="user-data-link ">Изменить пароль</li>
+                    <li class="user-data-link user-data-link-open">Мои отзывы</li>
+                    <li class="user-data-link">Избранные товары</li>
+                    <li onclick="openExitPopup()" class="user-data-link exit-btn">Выход</li>
+                </ul>
+                <div class="user-data-level-bonus">
+
+                    <div class="user-level-bonus-top">
+                        Ваш уровень возврата бонусов - <span class="user-level-bonus-top-sp">7%</span>
+                    </div>
+                    <div class="user-level-bonus-bot">  
+                        Сделайте заказ еще на 3000 р и получайте 10% бонусами!
+                    </div>
+                </div>
+            </div>
+            <div class="section-my-review-wrapp">
+                <div class="order-review-wrapp">
+                    <div class="order-review-img order-review-img-mobile"><img src="./img/jar-15 33.png" alt=""></div>
+                    <div class="order-review-cont">
+                        <div class="order-review-left">
+                            <div class="order-review-img order-review-img-desktop"><img src="./img/jar-15 33.png" alt=""></div>
+                            <div class="order-review-desc">
+                                <div class="order-review-top-desc">УВЛАЖНЯЮЩИЙ КРЕМ</div>
+                                <div class="order-review-bot-desc">DON’T TOUCH MY SKIN </div>
+                            </div>
+                        </div>
+                        <div class="order-review-raiting-wrapp">
+                            <div class="your-review-raiting">Ваша оценка:</div>
+                            <div class="your-review-stars-row">
+                                <div class="your-review-stars-top">
+                                    <div class="reviews-tab-review-rating">
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                        </svg>
+                                        <svg width="27" height="28" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#C5C5C5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="your-review-num-stars"><span class="rating__result">4.0</span></div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="review-comment-wrapp">
+                    <div class="your-review-stars-wrapp-bot">
+                        <div class="your-review-stars-bot ">
+                            <div class="reviews-tab-review-rating reviews-tab-review-rating-bot">
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#F09661"></path>
+                                </svg>
+                                <svg width="22" height="23" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.71328 0.694407C7.80018 0.412086 8.19982 0.412087 8.28672 0.694408L9.95545 6.11554C9.99419 6.2414 10.1105 6.32728 10.2422 6.32728H15.6754C15.962 6.32728 16.0854 6.69088 15.8579 6.86533L11.435 10.2573C11.3355 10.3336 11.2939 10.4638 11.3308 10.5836L13.0136 16.0503C13.0995 16.3296 12.7761 16.5545 12.5443 16.3766L8.18257 13.0316C8.07487 12.949 7.92513 12.949 7.81743 13.0316L3.45572 16.3766C3.22386 16.5545 2.90047 16.3296 2.98644 16.0503L4.66919 10.5836C4.70608 10.4638 4.66454 10.3336 4.56503 10.2573L0.142083 6.86533C-0.0853987 6.69088 0.037972 6.32728 0.324648 6.32728H5.75783C5.88952 6.32728 6.00581 6.2414 6.04455 6.11554L7.71328 0.694407Z" fill="#C5C5C5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="your-review-date-stars">
+                            25 мая 2022
+                        </div>
+                    </div>
+                    <div class="your-review-comment-txt">
+                        <p>Идеальная пенка, которая покорила моё лицо и сердце! Вариант, который однозначно подойдет даже для самой чувствительной и привередливой кожи  :)  Обычно после умывания даже простой водой мое лицо покрывается небольшими красными пятнышками, но после первого использования этой пенки ничего такого не было! Кожа была не просто хорошо очищена, но и будто увлажнена. Никакой стянутости или сухости. Теперь по утрам бегом встаю, чтобы умыться этой чудо-пенкой  :)</p>
+                    </div>
+
+                </div>
+
+        </div>    
+        </div>
+        
         <div class="container">
             <footer>
                 <div class="footer-left">
@@ -890,7 +942,15 @@
                 </div>
             </footer>
         </div>
+        
     </main>
+    <div class="exit-popup-wrapp">
+        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
+        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
+        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
+        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
+    </div>
+    <div class="bg-popup"></div>
     <script src="./js/main.js"></script> 
 </body>
 </html>
