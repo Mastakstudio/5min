@@ -290,11 +290,16 @@ $(document).ready(function(){
     },1500);
 
 
-    $('.home-faq-title').click(function(){
-        var parent = $(this).parents('.home-faq-item');
-        $(this).toggleClass('active');
-        $(parent).find('.home-faq-text').slideToggle();
-    });
+    // $('.home-faq-title').click(function(){
+    //     var parent = $(this).parents('.home-faq-item');
+    //     $(this).toggleClass('active');
+    //     $(parent).find('.home-faq-text').slideToggle();
+    // });
+    // $('.home-faq-title').click(function(){
+    //     var parent = $(this).parents('.home-faq-item');
+    //     $(this).toggleClass('active');
+    //     $(parent).find('.home-faq-text').slideToggle();
+    // });
 
 
     $('.header-menu-catalog').click(function(){
@@ -755,4 +760,78 @@ function showAuth(){
     authWrapp.style.display = 'block'
     regWrapp.style.display = 'none';
 }
+
+let aDelBtn = document.querySelector('.home-faq-title');
+
+let contFormFqa =document.querySelector('.home-faq')
+let key= 1;
+aDelBtn.addEventListener('click',function(event)  {
+   
+   
+
+    let arrForm = document.querySelectorAll('.form-del');
+
+    let idElem = "el"+key;
+
+    
+
+    contFormFqa.insertAdjacentHTML('beforebegin', '<div class="form-del" id="'+idElem+'" data-adress-id="'+key+'"  action=""> <div class="close-form-del"></div><div class="user-form-data-adress"><div class="user-data-input-container user-data-input-20"><label for="us-dt-pS" aria-label="lb-t" class="forScroll'+key+'">Населенный пункт*</label><input id="us-dt-pS" name="city-'+key+'"  type="text" placeholder="Самара"> </div><div class="user-data-input-container "><label for="us-dt-str">Улица*</label><input id="us-dt-str"  name="street-'+key+'"  type="text" placeholder="Ленина"></div></div><div class="user-form-adres-place"> <div class="left-user-form-agress"><div class="user-data-input-container-adress adr-150"><label for="us-dt-home">Дом*</label><input id="us-dt-home" name="home-'+key+'"   type="text" placeholder="23"></div><div class="user-data-input-container-adress adr-150"><label for="us-dt-ad-home">Корпус</label><input id="us-dt-ad-home" name="cor-'+key+'"   type="text" placeholder="1"></div></div>  <div class="right-user-form-agress"><div class="user-data-input-container-adress adr-109"><label for="us-dt-num-flat">Квартира</label><input id="us-dt-num-flat" name="flat-'+key+'"  type="text" placeholder="53"></div><div class="user-data-input-container-adress adr-109"><label for="us-dt-pod">Подъезд</label><input id="us-dt-pod" name="pod-'+key+'"  placeholder="2"></div><div class="user-data-input-container-adress adr-109"><label for="us-dt-etj">Этаж</label><input id="us-dt-etj" name="etj-'+key+'"  type="text" placeholder="9"></div></div></div> <div class="make-adress-default"><div class="home-bottom-form-checkbox home-bottom-form-checkbox-adress"><input type="checkbox" name="city-'+key+'"  id="adress-default"><div><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"./></svg></div></div><label for="adress-default">Сделать адресом по умолчанию</label></div></div>    ');
+
+    let arrCloseForm = document.querySelectorAll(".close-form-del");
+    arrCloseForm.forEach(function(item){
+        item.addEventListener("click",function(event){
+            let idName = item.parentNode.id;
+            
+            let test = document.getElementById(idName)
+            test.remove();
+        })
+    })
+    key++;
+})
+
+
+
+// function handleButtonClick() {
+//     window.scrollBy({
+//         top: 390,
+//         left: 0,
+//         behavior: "smooth",
+//       });
+
+// }
+
+// btn.addEventListener("click", handleButtonClick);
+
+
+var hiddenElement = document.querySelector(".home-faq");
+var btn = document.querySelector(".faq-for-adrees");
+
+let lastOfArr = document.querySelectorAll(".form-del")
+let elArr = lastOfArr[lastOfArr.length -1 ]
+
+console.log(elArr)
+
+function handleButtonClick() {
+    // window.scrollBy({
+    //     top: 390,
+    //     left: 0,
+    //     behavior: "smooth",
+    //   });
+//   hiddenElement.scrollIntoView({ block: "center", behavior: "smooth" });
+let arrLbArr =document.querySelectorAll('[aria-label="lb-t"]');
+
+let elemLbArr = arrLbArr[arrLbArr.length-1];
+
+let boundItem = elemLbArr.getBoundingClientRect();
+window.scrollBy({
+        top: boundItem.top- 150 ,
+        left: 0,
+        behavior: "smooth",
+      });
+
+}
+btn.addEventListener("click", handleButtonClick);
+
+
+
 

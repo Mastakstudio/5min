@@ -14,12 +14,9 @@
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"> </script>
     <script src="/jquery-m/jquery.mobile.custom.min.js"> </script>
 
-
-<link rel="stylesheet" href="fonts_new/stylesheet.css">
-<!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/user-data.css">
+    <link rel="stylesheet" href="fonts_new/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text-page.css">
 </head>
 <body>
     <div class="mob-bottom-menu">
@@ -734,116 +731,126 @@
         <div class="header-shadow"></div>
     </header>
 
-    <main class="main ">
-        <div class="section-user-data container">
-            <div class="user-data-title">Адрес доставки</div>
-        </div>
-        <div class="user-data-links-wrapp-ad ">
-           <div class="scroll-wrapp">
-                <ul class="user-data-list">
-                    <li class="user-data-link user-data-link-first-el user-data-link-open-ad">Адрес доставки</li>
-                    <li class="user-data-link">Мои заказы</li>
-                    <li class="user-data-link">Изменить пароль</li>
-                    <li class="user-data-link">Мои отзывы</li>
-                    <li class="user-data-link">Избранные товары</li>
-                </ul>
-           </div>
-            
-           <div class="user-title-wrapp-ad">
-                <div class="user-data-title-ad">Адрес доставки</div>
-                <div onclick="openExitPopup()" class="user-exit-wrapp-img">
-                    <img src="./img/Mask group exit.png" alt="">
-                    <div class="user-exit-link-img">
-                        <span>Выход</span>
-                    </div>
-                </div>
-           </div>
-            <div class="user-data-level-bonus">
-                
-                <div class="user-level-bonus-top">
-                    Ваш уровень возврата бонусов - <span class="user-level-bonus-top-sp">7%</span>
-                </div>
-                <div class="user-level-bonus-bot">
-                    Сделайте заказ еще на 3000 р и получайте 10% бонусами!
-                </div>
-            </div>
-        </div>
-        <div class="user-data-container-adress container">
-            <div class="user-data-links-wrapp user-data-links-wrapp-for-adress">
-                <div class="user-data-links-title">
-                    личный кабинет
-                </div>
-                <ul class="user-data-list ">
-                    <li class="user-data-link user-data-link-open">Личные данные</li>
-                    <li class="user-data-link">Мои заказы</li>
-                    <li class="user-data-link">Изменить пароль</li>
-                    <li class="user-data-link">Мои отзывы</li>
-                    <li class="user-data-link">Избранные товары</li>
-                    <li onclick="openExitPopup()" class="user-data-link">Выход</li>
-                </ul>
-            </div>
-            
-            <div class="user-data-form-wrapp">
-                <p class="data-adress-txt">Добавьте адрес доставки, чтобы не заполнять егокаждый раз при оформлении заказа.</p>
-                        <form  class="form-add"  action="">
-                    <div class="form-del" id="0" data-adress-id="0">
-                        <div class="user-form-data-adress">
-                            <div class="user-data-input-container user-data-input-20"><label for="us-dt-pS">Населенный пункт*</label><input id="us-dt-pS" name="city-0" type="text" placeholder="Самара"> </div>
-                            <div class="user-data-input-container "><label for="us-dt-str">Улица*</label><input id="us-dt-str" type="text" name="street-0" placeholder="Ленина"></div>
+    <main class="main c-m">
+        
+         <div class="section-form">
+            <div class="bn-form-wrapp container">
+                <div class="bn-form-container">
+                    <form action="">
+                        <div class="bn-input-container">
+                            <label class="label-bn" for="">Имя <span>*</span></label>
+                            <input class="input-bn" type="text" placeholder="Наталья ">
+                           
                         </div>
-                        <div class="user-form-adres-place">
-                            <div class="left-user-form-agress">
-                                <div class="user-data-input-container-adress adr-150"><label for="us-dt-home">Дом*</label><input id="us-dt-home" name="home-0" type="text" placeholder="23"></div>
-                                <div class="user-data-input-container-adress adr-150"><label for="us-dt-ad-home">Корпус</label><input id="us-dt-ad-home" name="cor-0" type="text" placeholder="1"></div>
-                            </div>
-                            <div class="right-user-form-agress">
-                                <div class="user-data-input-container-adress adr-109"><label for="us-dt-num-flat">Квартира</label><input id="us-dt-num-flat" name="flat-0'" type="text" placeholder="53"></div>
-                                <div class="user-data-input-container-adress adr-109"><label for="us-dt-pod">Подъезд</label><input id="us-dt-pod" type="text" name="pod-0" placeholder="2"></div>
-                                <div class="user-data-input-container-adress adr-109"><label for="us-dt-etj">Этаж</label><input id="us-dt-etj" type="text" name="etj-0" placeholder="9"></div>
-                            </div>
-
+                        <div class="bn-input-container">
+                            <label class="label-bn" for="">Фамилия</label>
+                            <input class="input-bn" type="text" placeholder="">
+                      
                         </div>
-                        <div class="make-adress-default">
-                            <div class="home-bottom-form-checkbox home-bottom-form-checkbox-adress">
-                                <input type="checkbox" name="" id="adress-default">
+                        <div class="bn-input-container">
+                            <label class="label-bn" for="">Пол</label>
+                            <p class="switch-gender-wrapp">
+                                <input type="radio" name="genderChoise" id="gender"><label for="gender">женский</label>
+                                <input type="radio" name="genderChoise" id="gender1"><label for="gender1">мужской</label>
+                            </p>
+                        </div>
+                        <div class="bn-input-container">
+                            <label class="label-bn" for="">Номер</label>
+                            <input class="input-bn" type="number" placeholder="+994   __  __  __  __  __  __  __  __  __">
+                          
+                        </div>
+                    </form>
+                    <div class="bn-agree-wrapp">
+                        <p class="agree-title">Ознакомьтесь, пожалуйста, до дачи согласия:</p>
+                        <div class="bn-inp-sec-wrapp">
+                            <div class="home-bottom-form-checkbox home-bottom-form-checkbox-for-bn">
+                                <input type="checkbox" name="" id="">
                                 <div>
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"./>
                                         </svg>
                                         
                                 </div>
-                                
                             </div>
-                            <label for="adress-default">Сделать адресом по умолчанию</label>
-                            
-                            
+                            <p class="bn-txt-sec-wrapp">Регистрации и участия в Программе лояльности Клуб покупателей <span class="bn-text-bold">«5 минут и выхожу»</span>. <span class="bn-text-blue">С правилами участия</span>  в Клубе покупателей <span class="bn-text-bold">«5 минут и выхожу»</span>  ознакомлен и согласен*
+                                <span class="bn-text-bold">Создадим Вам бонусную карту</span>
+                            </p>
+                        </div>
+                        <div class="bn-inp-sec-wrapp">
+                            <div class="home-bottom-form-checkbox home-bottom-form-checkbox-for-bn">
+                                <input type="checkbox" name="" id="">
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"./>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                            <p class="bn-txt-sec-wrapp">Создания и использования личного кабинета
+                               <span class="bn-text-bold"> Чтобы накапливать и списывать бонусы, покупая на сайте</span>
+                            </p>
+                        </div>
+                        <div class="bn-inp-sec-wrapp">
+                            <div class="home-bottom-form-checkbox home-bottom-form-checkbox-for-bn">
+                                <input type="checkbox" name="" id="">
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5.5L5 9L9.42731 1.12923L9.5 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"./>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                            <p class="bn-txt-sec-wrapp">Получения рекламно-информационной рассылки о товарах, работах, услугах <span class="bn-text-bold">«5 минут и выхожу»</span>
+                               
+                            </p>
+                        </div>
+                        <div class="agree-text-bot"> <span class="bn-text-bold">Чтобы узнавать о персональных предложениях, дополнительных начислениях, балансе бонусов, скидках и др.</span></div>
+                    </div>
+                    <div class="bn-form-btn">Зарегистрироваться</div>
+                </div>
+                <div class="bn-form-text-wrapp">
+                    <img src="./img/Vector 17.png" alt="" class="form-img">
+                    <div class="bn-form-text-top">Добро пожаловать в Клуб покупателей «5 минут и выхожу»!</div>
+                    <div class="bn-form-text-bot">
+                        Копите бонусы, используйте их — получайте СКИДКУ до 30%. Всё о Программе лояльности <a href="">здесь>>></a></div>
+                </div>
+            </div>
+
+         </div>
+         <div class="section-bn-wrapp container">
+
+                <div class="bn-block">
+                    <div class="bn-img-wrapp">
+                        <img class="bn-img-item" src="./img/free-icon-positive.png" alt="">
+                        <div class="bn-img-circle">
+                            <p class="bn-img-cercle-text"> <span>+ 50</span> <br>бонусов</p>
                         </div>
                     </div>
-                    <div class="home-faq home-faq-adress">
-                            <div class="user-data-btn user-data-btn-for-adress btn-hv">
-                            Сохранить
-                            </div>
-                        <div class="home-faq-item">
-                            <div class="home-faq-title faq-for-adrees">
-          
-                                
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="13" cy="13" r="12.5" stroke=""/>
-                                <rect x="12.5332" y="6" width="0.933333" height="14" rx="0.466667" fill=""/>
-                                <rect x="20" y="12.5332" width="0.933334" height="14" rx="0.466667" transform="rotate(90 20 12.5332)" fill=""/>
-                                </svg>
-                                <span class="faq-for-adrees-spn">
-                                    Добавить еще адрес
-                                </span>
-                            </div>
+                    <div class="bn-block-text">Оставить отзыв на любой из удобных площадок: 2gis или Яндекс.карты и получите 50 бонусов</div>
+                </div>
+                <div class="bn-block">
+                    <div class="bn-img-wrapp">
+                        <img class="bn-img-item" src="./img/free-icon-positive.png" alt="">
+                        <div class="bn-img-circle">
+                            <p class="bn-img-cercle-text"> <span>+ 50</span> <br>бонусов</p>
                         </div>
+                    </div>
+                    <div class="bn-block-text">Оставить отзыв на любой из удобных площадок: 2gis или Яндекс.карты и получите 50 бонусов
+                        Оставить отзыв на любой из удобных площадок: 2gis или Яндекс.карты и получите 50 бонусов
+                    </div>
+                </div>
+                <div class="bn-block">
+                    <div class="bn-img-wrapp">
+                        <img class="bn-img-item" src="./img/free-icon-positive.png" alt="">
+                        <div class="bn-img-circle">
+                            <p class="bn-img-cercle-text"> <span>+ 50</span><br>бонусов</p>
                         </div>
-                    
-                </form>
-            </div>
-            
-        </div>
-       
+                    </div>
+                    <div class="bn-block-text">Оставить отзыв на любой из удобных площадок: 2gis или Яндекс.карты и получите 50 бонусов</div>
+                </div>
+         </div>
+
+
         <div class="container">
             <footer>
                 <div class="footer-left">
@@ -923,15 +930,8 @@
                 </div>
             </footer>
         </div>
-        
     </main>
-    <div class="exit-popup-wrapp">
-        <div onclick="closeExitPopup()" class="exit-popup-close"></div>
-        <div class="exit-popup-img"><img src="./img/premium-icon-user-2102647 3.png" alt=""></div>
-        <div class="exit-popup-txt"><p>Вы уверены что хотите выйти из личного кабинета?</p></div>
-        <div  onclick="closeExitPopup()" class="exit-popup-btn btn-hv">Выйти</div>
-    </div>
-    <div class="bg-popup"></div>
+
     <script src="./js/main.js"></script> 
 </body>
 </html>
